@@ -1,0 +1,16 @@
+Linguagem - [PORTUGUÊS BR]
+Portuguese (Brazil)
+[Text:0; {Itens padrão do Unity} ids:0;-1;-2;-3;-4;-5;-6;-7;-8;-9;-10;-11;]
+id:-11;{Alternar} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-10;{Teste de Idioma}
+id:-9;{Olá Mundo} S:0; Font:0; Rev:0;
+id:-8;{Novo Texto} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-7; S:0; Font:0; Ali:0; Rev:0;
+id:-6;{Digite o texto...} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-5; Font:0; Ali:0; Rev:0;
+id:-4;{Opção C}
+id:-3;{Opção B}
+id:-2;{Opção A}
+id:-1;{Botão} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+[Comments:0; {Se um id não foi definido, ele mostrará esta mensagem.}]
+id:0;{Sem ID de idioma} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
