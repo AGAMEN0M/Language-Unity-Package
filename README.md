@@ -3,7 +3,9 @@ A tool that helps you translate your games and facilitates translation by fans.
 
 [Language - Package v0.0.1](https://github.com/AGAMEN0M/Language-Unity-Package/files/11673010/Language.-.by.Lucas_AGAMENOM.zip)
 
-[Language Editor - Package v0.0.1](https://github.com/AGAMEN0M/Language-Unity-Package/files/11673012/Language.Editor.-.by.Lucas_AGAMENOM.zip)
+[Language Editor - Package v0.0.2](https://github.com/AGAMEN0M/Language-Unity-Package/files/11673012/Language.Editor.-.by.Lucas_AGAMENOM.zip)
+
+[Language Editor build](https://agamen0m.itch.io/language-editor)
 
 This tool is compatible with TextMeshPro. 
 
