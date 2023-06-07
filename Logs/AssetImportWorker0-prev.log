@@ -1,0 +1,906 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.26f1 (a16dc32e0ff2) revision 10579395'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'pt' Physical Memory: 24418 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Program Files\Unity\Hub\Editor\2021.3.26f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Usable Assets/Me Asset/Language
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+11944
+Successfully changed project path to: D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Usable Assets/Me Asset/Language
+D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Usable Assets/Me Asset/Language
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12032] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 56453557 [EditorId] 56453557 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8R7TPNR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12032] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 56453557 [EditorId] 56453557 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-8R7TPNR) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 138.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.26f1 (a16dc32e0ff2)
+[Subsystems] Discovering subsystems at path D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Usable Assets/Me Asset/Language/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4019 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Program Files/Unity/Hub/Editor/2021.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008124 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 1176 ms
+Refreshing native plugins compatible for Editor in 127.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.405 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2405ms)
+		BeginReloadAssembly (268ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (1986ms)
+			LoadAssemblies (271ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (177ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (1702ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (1323ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (128ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (99ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.017426 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\Users\lucas\Desenvolvimento de Jogos\Unity 3D\Usable Assets\Me Asset\Language\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Users\lucas\Desenvolvimento de Jogos\Unity 3D\Usable Assets\Me Asset\Language\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.770 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1771ms)
+		BeginReloadAssembly (340ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (1242ms)
+			LoadAssemblies (323ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (437ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (496ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (284.4 KB). Loaded Objects now: 3592.
+Memory consumption went from 117.9 MB to 117.6 MB.
+Total: 6.069000 ms (FindLiveObjects: 0.497300 ms CreateObjectMapping: 0.386400 ms MarkObjects: 5.077300 ms  DeleteObjects: 0.106300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10834.043748 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman bold SDF.asset
+  artifactKey: Guid(de6749d09cbf4da428c695cde873e1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman bold SDF.asset using Guid(de6749d09cbf4da428c695cde873e1c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3b49053820c1d2c37054e17ae5d459') in 0.178023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003194 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Text_LT_Legacy.cs
+  artifactKey: Guid(49c9d7aacdc2a974babe1ac08eeab4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Text_LT_Legacy.cs using Guid(49c9d7aacdc2a974babe1ac08eeab4da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43487099b4774648e640c236d0a4390b') in 0.024507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004724 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/InputField (LT Legacy).prefab
+  artifactKey: Guid(112a704cee206a541aa0829815f86666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/InputField (LT Legacy).prefab using Guid(112a704cee206a541aa0829815f86666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a918c26ff2ed25e088df3bf84c76b5') in 0.035500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001031 seconds.
+  path: Assets/Language/Editor/Icon
+  artifactKey: Guid(cc0966729bf6ead4bbd86ccc3b97d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon using Guid(cc0966729bf6ead4bbd86ccc3b97d43b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd644b0534da7d3de39a476cb94adf18c') in 0.004200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002585 seconds.
+  path: Assets/Language/Editor/Script/Scene/Language_Create_File_LT.cs
+  artifactKey: Guid(16b7163eb0f40ce499c16d3185844ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene/Language_Create_File_LT.cs using Guid(16b7163eb0f40ce499c16d3185844ce7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27436412c34d19b0df9ddaa2a9b7c10b') in 0.004072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003321 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Language Dropdown Icon .png
+  artifactKey: Guid(f3ec0ef2676cc184b8027eb395ac7ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Language Dropdown Icon .png using Guid(f3ec0ef2676cc184b8027eb395ac7ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a2e4134a0ccab2ea0c1b2e8ec25f5a') in 0.022926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003325 seconds.
+  path: Assets/Language/Editor/Script/Scene
+  artifactKey: Guid(fae709a7b8d3b5f48999cf685e4d509b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene using Guid(fae709a7b8d3b5f48999cf685e4d509b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2dcf2eb763f3279e8fedafbf32d6ed6') in 0.003671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003375 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/Toggle (LT Legacy).prefab
+  artifactKey: Guid(2b944fa1af59d5b40a20ec5acd75d597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/Toggle (LT Legacy).prefab using Guid(2b944fa1af59d5b40a20ec5acd75d597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6561fcdd4aeb907caffff4a1a82137c') in 0.011899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001175 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro
+  artifactKey: Guid(f5cf83f3d285e0e4894435897a3b06b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro using Guid(f5cf83f3d285e0e4894435897a3b06b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36e1e3f702b365f01a3dc423b19f1b2') in 0.002730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002701 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Dropdown Icon .png
+  artifactKey: Guid(2169e7f2edc3f874e80517a62c3bfe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Dropdown Icon .png using Guid(2169e7f2edc3f874e80517a62c3bfe3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8e364350531cb150a893f2ed13dfef') in 0.012693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005046 seconds.
+  path: Assets/Language/Prefab/Legacy/Scene/New Text (LT).prefab
+  artifactKey: Guid(178b89f5bdcd0074084065ab05a56b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/Scene/New Text (LT).prefab using Guid(178b89f5bdcd0074084065ab05a56b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f68a731518470ae0df9323fcecb7540') in 0.011444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004006 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/Dropdown (LT Legacy).prefab
+  artifactKey: Guid(0ec93353467cc36488abfb522fe1fd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/Dropdown (LT Legacy).prefab using Guid(0ec93353467cc36488abfb522fe1fd85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd824f05794ff2dbaf0f8280de89a17cb') in 0.019263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Language/Prefab/Legacy/UI
+  artifactKey: Guid(7dad122a6e3455149aa8631249d41aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI using Guid(7dad122a6e3455149aa8631249d41aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dfaa4eebbc13a6e332752409cebf698') in 0.004908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002629 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Language Dropdown Options Icon .png
+  artifactKey: Guid(855852a1b7bc0ed4aa3a00e108f60bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Language Dropdown Options Icon .png using Guid(855852a1b7bc0ed4aa3a00e108f60bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca1805d3aff122b649c17d396f4cad9') in 0.015956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004393 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Language_Dropdown_LT_Legacy.cs
+  artifactKey: Guid(029e4949582b73644983913680fa8576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Language_Dropdown_LT_Legacy.cs using Guid(029e4949582b73644983913680fa8576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ca27c1752aa2180f06157778423b33') in 0.006037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002760 seconds.
+  path: Assets/Language/Script/LanguageCreateFile.cs
+  artifactKey: Guid(037bad271278c3245912f8bfd6b94b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/LanguageCreateFile.cs using Guid(037bad271278c3245912f8bfd6b94b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c05b84c937c8977bef2bfbcd8afed63') in 0.003921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004019 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/Language Dropdown (LT Legacy).prefab
+  artifactKey: Guid(020bb43ca084ddd42979067206e4c8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/Language Dropdown (LT Legacy).prefab using Guid(020bb43ca084ddd42979067206e4c8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a16ae8ccc9a70f5643cf80cd4cc0e84') in 0.006683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001532 seconds.
+  path: Assets/Language/Script/Legacy
+  artifactKey: Guid(7ef3c8fdb2599d44bbd9fac4d6b8a138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy using Guid(7ef3c8fdb2599d44bbd9fac4d6b8a138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7403bdc985c4524dc4cdf325791a97') in 0.002584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001342 seconds.
+  path: Assets/Language/Editor/Script
+  artifactKey: Guid(cffe66249e3c10b4b94591a9e1ddb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script using Guid(cffe66249e3c10b4b94591a9e1ddb49c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10876784cebd70ef9035f1ed000a05d') in 0.002415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004108 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman italic.ttf
+  artifactKey: Guid(f163bb147e6e9ed41a3ded9b0644c9ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman italic.ttf using Guid(f163bb147e6e9ed41a3ded9b0644c9ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2345f941fad8e936a7ad3fe86aed14b5') in 0.032621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004840 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman bold italic.ttf
+  artifactKey: Guid(43a87f930488a2c4284db9ccd27bea0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman bold italic.ttf using Guid(43a87f930488a2c4284db9ccd27bea0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fbf7a8ca336a324b95825237414323c') in 0.014462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004424 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman italic SDF.asset
+  artifactKey: Guid(851e29d962985154d9ad2417a09b4439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman italic SDF.asset using Guid(851e29d962985154d9ad2417a09b4439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '809670e5d90442676c2c22fa95455de4') in 0.022212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002212 seconds.
+  path: Assets/Language/Editor
+  artifactKey: Guid(9491f4faf8d4cea4ca35f169b9e344ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor using Guid(9491f4faf8d4cea4ca35f169b9e344ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a85aaa36c42ff2dbdea302f63354b60') in 0.003551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001806 seconds.
+  path: Assets/Language/Editor/Script/Screens/Legacy
+  artifactKey: Guid(279d409ee1da8af41ad9b09dfe1cf998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Screens/Legacy using Guid(279d409ee1da8af41ad9b09dfe1cf998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c4f525f213221eae845ca597e0a6151') in 0.002690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003981 seconds.
+  path: Assets/Language/Script/Legacy/Base LanguageText.zip
+  artifactKey: Guid(c66a219a580b2b54fbb775f74ae5fba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/Base LanguageText.zip using Guid(c66a219a580b2b54fbb775f74ae5fba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3017ccd309d50a7a3eb17b01b645cf') in 0.010794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001440 seconds.
+  path: Assets/Language/Script/TextMesh Pro
+  artifactKey: Guid(b6a93d3eb5ce662479f4813601b344c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro using Guid(b6a93d3eb5ce662479f4813601b344c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd899aa4d2e07ca6bcce38d3792baf659') in 0.002409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001081 seconds.
+  path: Assets/Language
+  artifactKey: Guid(0b2e97391a68f3740a04582ee2e78016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language using Guid(0b2e97391a68f3740a04582ee2e78016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9265333be249ee1228024322c5f467b8') in 0.003757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001589 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/Scene
+  artifactKey: Guid(af4622be6be5c494889d82c4c1a17296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/Scene using Guid(af4622be6be5c494889d82c4c1a17296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43f2b4dedbae3f6b93d63c715ef685f3') in 0.002648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003795 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/Text (LT TMP).prefab
+  artifactKey: Guid(d083ef64cd250fe499c231d4ea34f720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/Text (LT TMP).prefab using Guid(d083ef64cd250fe499c231d4ea34f720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb66749900a8485ceab8eb9b6e4fd01f') in 0.069719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005131 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman.ttf
+  artifactKey: Guid(4ba390863bd5b624fa099e7dccc272fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman.ttf using Guid(4ba390863bd5b624fa099e7dccc272fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a96ec0214cc47ed03c4155ec0e1397') in 0.012132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004494 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman bold.ttf
+  artifactKey: Guid(0da35ea13b25a0744b6bc54ea5bd363d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman bold.ttf using Guid(0da35ea13b25a0744b6bc54ea5bd363d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd0c772880d2dabef4b1b1bb5cc1add') in 0.012101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003761 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Language Text Icon.png
+  artifactKey: Guid(f5f418d21f9aa9846ad40f1b03f52cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Language Text Icon.png using Guid(f5f418d21f9aa9846ad40f1b03f52cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa40de718eaa281a2cc61b54224de7b') in 0.015748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004797 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Language Font List Icon.png
+  artifactKey: Guid(3ce6058c17425dd4eb9cd090c8cbf6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Language Font List Icon.png using Guid(3ce6058c17425dd4eb9cd090c8cbf6e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f787363f1640927a99e373b580df68c') in 0.010714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004230 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Button_LT_Legacy.cs
+  artifactKey: Guid(74ee4244f7fb96e479a67ceb9f060c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Button_LT_Legacy.cs using Guid(74ee4244f7fb96e479a67ceb9f060c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35116e2f99766b79a5ce511376d4eac4') in 0.003675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003717 seconds.
+  path: Assets/Language/Editor/Script/Scene/Legacy/Canvas_NewText_LT_Legacy.cs
+  artifactKey: Guid(ce8a5366246aae846bb0519f093c9fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene/Legacy/Canvas_NewText_LT_Legacy.cs using Guid(ce8a5366246aae846bb0519f093c9fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5669b899aeab69c2ead80a85614ccca') in 0.003761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003842 seconds.
+  path: Assets/Language/Script/Screens/LanguageSaveEditorWindow.cs
+  artifactKey: Guid(f034fa02fd2c93b4595ec7e60361b0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Screens/LanguageSaveEditorWindow.cs using Guid(f034fa02fd2c93b4595ec7e60361b0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fa1b49fb1e9e0228028b8c56374ae6d') in 0.003472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004539 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Save Language Text Icon.png
+  artifactKey: Guid(7c6039fa028252142b74636dafd9d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Save Language Text Icon.png using Guid(7c6039fa028252142b74636dafd9d625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b36ad5082d3aa7a59954d57ef692a40') in 0.016617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002288 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy
+  artifactKey: Guid(55cb087b4c3e5c643a9ee89821a16666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy using Guid(55cb087b4c3e5c643a9ee89821a16666) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69618fcc6b43c38116d620b474f68551') in 0.002240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003318 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_InputField_LT_Legacy.cs
+  artifactKey: Guid(ddaf0da223b3a2e4fae239590095db6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_InputField_LT_Legacy.cs using Guid(ddaf0da223b3a2e4fae239590095db6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c74a72f9705b0c1eb08c7818c14009') in 0.004333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003616 seconds.
+  path: Assets/Language/Prefab/Language Create File (LT).prefab
+  artifactKey: Guid(dad4f3f17ad260141b1b69bd80118aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Language Create File (LT).prefab using Guid(dad4f3f17ad260141b1b69bd80118aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83bb54f18ec2c04d55d5680745e21942') in 0.009210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003263 seconds.
+  path: Assets/Language/Script/Legacy/LanguageDropdown.cs
+  artifactKey: Guid(4c30091442e592748b3eb988bb11b27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageDropdown.cs using Guid(4c30091442e592748b3eb988bb11b27e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa70cb8ef7863a8541463bfd185a5f2') in 0.003626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001896 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI
+  artifactKey: Guid(ce82039ee0386894c8faf4a2d1ae97a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI using Guid(ce82039ee0386894c8faf4a2d1ae97a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '071a90ea14e9985e25375a569c8d0150') in 0.002312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004185 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/Language Dropdown (LT).prefab
+  artifactKey: Guid(b27d33fbe25f79f42a669d5434a63944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/Language Dropdown (LT).prefab using Guid(b27d33fbe25f79f42a669d5434a63944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269cdfbfa730b7b8f094c80215b46b48') in 0.030362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001258 seconds.
+  path: Assets/StreamingAssets
+  artifactKey: Guid(6830d0cdc1ad1994391c7afb52f9a2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets using Guid(6830d0cdc1ad1994391c7afb52f9a2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7943718e2aa6425614eb381e29668366') in 0.003795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003964 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Language_Dropdown_LT_Legacy.cs
+  artifactKey: Guid(7efbb5dbefea09b4fa7275ef4616358f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Language_Dropdown_LT_Legacy.cs using Guid(7efbb5dbefea09b4fa7275ef4616358f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69d0e2189d655a4a585b567acae0547') in 0.003723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002875 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Text_LT_Legacy.cs
+  artifactKey: Guid(1e53f5427b8f0784bb33a24d3ab8dcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Text_LT_Legacy.cs using Guid(1e53f5427b8f0784bb33a24d3ab8dcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5139c084091358327ba1e2d4687a71') in 0.003900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003858 seconds.
+  path: Assets/Language/Editor/LanguageSave.json
+  artifactKey: Guid(39efa6fde26e4f348b590aa9ca46ce52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/LanguageSave.json using Guid(39efa6fde26e4f348b590aa9ca46ce52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c152ad72205b3aaf516c9f84de7254b') in 0.009363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003954 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Dropdown Options Icon .png
+  artifactKey: Guid(01946f5705b2122408c350788e59218e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Dropdown Options Icon .png using Guid(01946f5705b2122408c350788e59218e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbccc77bdda354c2105fbaa608f451a1') in 0.010530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004271 seconds.
+  path: Assets/Language/Editor/Script/Font Lists/TextMesh Pro/LanguageFontList_LT.cs
+  artifactKey: Guid(f5e69029e99ba174685a225db47c2442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Font Lists/TextMesh Pro/LanguageFontList_LT.cs using Guid(f5e69029e99ba174685a225db47c2442) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd734d97bacff2923b25f5dabc72621fe') in 0.003910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003080 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/InputField Icon.png
+  artifactKey: Guid(ab19569532c63254ea18c8c53d5f02d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/InputField Icon.png using Guid(ab19569532c63254ea18c8c53d5f02d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e893dfe17839a28d1c98741f24702fec') in 0.011943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004558 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Button_LT_Legacy.cs
+  artifactKey: Guid(588d9378108e7d5469053fb3fc48dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Button_LT_Legacy.cs using Guid(588d9378108e7d5469053fb3fc48dfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42f883808066b6b75d631241f78b57f') in 0.003546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003694 seconds.
+  path: Assets/Language/Editor/Script/Screens/Legacy/MeuEditorAddComponent.cs
+  artifactKey: Guid(cbba83b46626a0b42874d2fc7096f671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Screens/Legacy/MeuEditorAddComponent.cs using Guid(cbba83b46626a0b42874d2fc7096f671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60982ac89cbfb59d71366aed99e247c4') in 0.003709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004135 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/InputField (LT TMP).prefab
+  artifactKey: Guid(b5865a3e05046454484b20dddd01c92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/InputField (LT TMP).prefab using Guid(b5865a3e05046454484b20dddd01c92c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729e8b9535d460e0832c0846d1abf883') in 0.094869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004545 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/Button (LT Legacy).prefab
+  artifactKey: Guid(250e45c212daa714691d41fbfbbe645b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/Button (LT Legacy).prefab using Guid(250e45c212daa714691d41fbfbbe645b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f18b3aa10791787c3d12f303a9e90c4') in 0.010060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003471 seconds.
+  path: Assets/Language/Prefab/Legacy/UI/Text (LT Legacy).prefab
+  artifactKey: Guid(2284baa336ad04a4aadf43aa5f86996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/UI/Text (LT Legacy).prefab using Guid(2284baa336ad04a4aadf43aa5f86996f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70da7d636c8da6c151a9b90e85b5c7c') in 0.009296 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002838 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageDropdownOptionsTextMeshPro.cs
+  artifactKey: Guid(0fab8252889afe5499a00aeeb8427af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageDropdownOptionsTextMeshPro.cs using Guid(0fab8252889afe5499a00aeeb8427af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10de586220ee1f7d698bccde5001aa29') in 0.003606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002898 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Save Language Text Icon.png
+  artifactKey: Guid(4e3ef63a6c335d54e9032056bad76ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Save Language Text Icon.png using Guid(4e3ef63a6c335d54e9032056bad76ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '745fd13bdc6d8e491c1828bcd3bbef2e') in 0.011971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004191 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/Button (LT).prefab
+  artifactKey: Guid(e8c54717f1dd5de4eb9ad5d088e9bd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/Button (LT).prefab using Guid(e8c54717f1dd5de4eb9ad5d088e9bd40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af3ee4491c76938760362a7cafa54a0e') in 0.071010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003883 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/Scene/Text (LT TMP).prefab
+  artifactKey: Guid(c914f2af8bcc118438586a88d6f5a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/Scene/Text (LT TMP).prefab using Guid(c914f2af8bcc118438586a88d6f5a42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5532b7851be7192bf675878430d21b06') in 0.076732 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004477 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageDropdownTextMeshPro.cs
+  artifactKey: Guid(29404635f92acda458eb05dd6f700752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageDropdownTextMeshPro.cs using Guid(29404635f92acda458eb05dd6f700752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cdc4355b96e8b2253edcf63b566eaa4') in 0.003555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003821 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/Dropdown (LT).prefab
+  artifactKey: Guid(0a9834c47e791e94fb90c54e6db6730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/Dropdown (LT).prefab using Guid(0a9834c47e791e94fb90c54e6db6730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0c3a6dd725da5a781d8ca6589a5f4d') in 0.060651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004703 seconds.
+  path: Assets/Language/Script/Legacy/LanguageTextMesh.cs
+  artifactKey: Guid(36d855ad6d45a71479f391162cf238e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageTextMesh.cs using Guid(36d855ad6d45a71479f391162cf238e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce1bc89458400a68abe76dd16b455ee') in 0.003692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003283 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Dropdown_LT_Legacy.cs
+  artifactKey: Guid(c50f23920826c99448f2bd455e87f1d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Dropdown_LT_Legacy.cs using Guid(c50f23920826c99448f2bd455e87f1d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957aca6e9061210466fe0be551864f8e') in 0.004204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001907 seconds.
+  path: Assets/Language/Documentation
+  artifactKey: Guid(ede993cdb824ad54f8b7c0c93e2d8648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Documentation using Guid(ede993cdb824ad54f8b7c0c93e2d8648) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f35a1793538f03810e2778af29f887f6') in 0.003839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001873 seconds.
+  path: Assets/Language/Editor/Script/Screens
+  artifactKey: Guid(34c1fd1653629d84281e36d206b3ad72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Screens using Guid(34c1fd1653629d84281e36d206b3ad72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e273c9e8938af69c31bdcb60312cc721') in 0.003460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001792 seconds.
+  path: Assets/Language/Fonts/Times New Roman
+  artifactKey: Guid(63d99cf1cae45c54587902ee0be811e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman using Guid(63d99cf1cae45c54587902ee0be811e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2597a9a66d113a7a8f20cac5a361ac29') in 0.004705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012883 seconds.
+  path: Assets/StreamingAssets/Language/ENGLISH.txt
+  artifactKey: Guid(dcdcc00f1c29cf444b7af77a7e725c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/ENGLISH.txt using Guid(dcdcc00f1c29cf444b7af77a7e725c6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '835ebb536f8a743a16a878ab10a6c8df') in 0.031725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003509 seconds.
+  path: Assets/Language/Editor/Icon/Legacy/Language Text Mesh Icon.png
+  artifactKey: Guid(c82fc2c3495ae8e49ab2b807388e1bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy/Language Text Mesh Icon.png using Guid(c82fc2c3495ae8e49ab2b807388e1bec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85dc61482dde3bcb77b94547e549f22') in 0.012012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006683 seconds.
+  path: Assets/Language/Documentation/Language Documentation.docx
+  artifactKey: Guid(d9a3368e73462a548b6efcba6a8ddb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Documentation/Language Documentation.docx using Guid(d9a3368e73462a548b6efcba6a8ddb9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b644aa8d7101e93ef3c385fa21d2432') in 0.015535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002824 seconds.
+  path: Assets/Language/Editor/Icon/Language Script Icon .png
+  artifactKey: Guid(1d80e9b983c90ce4f869784a9860c90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Language Script Icon .png using Guid(1d80e9b983c90ce4f869784a9860c90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8782ade2a53d8ff3a51e9c2c81bbd2') in 0.019433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004688 seconds.
+  path: Assets/Language/Script/TextMesh Pro/SaveTextMeshProInformation.cs
+  artifactKey: Guid(4668c1e865104af4bb3a7d5d4a88fa49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/SaveTextMeshProInformation.cs using Guid(4668c1e865104af4bb3a7d5d4a88fa49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52ce6c636e508b6ed0b0ff5ec3372b7') in 0.003608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003015 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman bold italic SDF.asset
+  artifactKey: Guid(64691e0364edbde49a2b227819399f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman bold italic SDF.asset using Guid(64691e0364edbde49a2b227819399f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a74d48c24b0b3d7be3714504870c73') in 0.020647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001673 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro
+  artifactKey: Guid(d7984c7077ad90d4a933d6b1af61f683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro using Guid(d7984c7077ad90d4a933d6b1af61f683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d63d34a3cef58c3e4ecb2e363621425') in 0.002510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003915 seconds.
+  path: Assets/Language/Prefab/Legacy/LanguageFontList (LT Legacy).prefab
+  artifactKey: Guid(8a9e15ae707ea3e498ec272e87030eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/LanguageFontList (LT Legacy).prefab using Guid(8a9e15ae707ea3e498ec272e87030eaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97509a11dd9fa66b872e81e82dfd967a') in 0.008037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001497 seconds.
+  path: Assets/StreamingAssets/Language
+  artifactKey: Guid(344c9b1eaa7e10f4981f19e9ce5b2a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language using Guid(344c9b1eaa7e10f4981f19e9ce5b2a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7945fc8f77e88863e9744be1bde2a6') in 0.002780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001358 seconds.
+  path: Assets/Language/Editor/Script/Font Lists/TextMesh Pro
+  artifactKey: Guid(a16a92ec352e72d4db6ec715b7e4fdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Font Lists/TextMesh Pro using Guid(a16a92ec352e72d4db6ec715b7e4fdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6186f47b902e965726bf68b759e88780') in 0.002448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003987 seconds.
+  path: Assets/Language/Script/LanguageScript.cs
+  artifactKey: Guid(50dc6547d7f4a284abfcc42387d26699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/LanguageScript.cs using Guid(50dc6547d7f4a284abfcc42387d26699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04021b41c9db9661bea47227e6e0b90b') in 0.003966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003521 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/UI/Toggle (LT).prefab
+  artifactKey: Guid(8a6453c6f6266d64e9c8d5c54a2ca7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/UI/Toggle (LT).prefab using Guid(8a6453c6f6266d64e9c8d5c54a2ca7aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab571c2ce3e821e9d6b73945c5634af') in 0.060547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004621 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro InputField Icon.png
+  artifactKey: Guid(650fa286266387b45a487f3981a4fd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro InputField Icon.png using Guid(650fa286266387b45a487f3981a4fd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f31a097ca5613fdb02832dcfe1d901') in 0.015450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004265 seconds.
+  path: Assets/Language/Prefab/TextMesh Pro/LanguageFontList (LT).prefab
+  artifactKey: Guid(2bd08d447271631478b61bc8b3bd57b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/TextMesh Pro/LanguageFontList (LT).prefab using Guid(2bd08d447271631478b61bc8b3bd57b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd49075136242acbcd41f14fe9687b563') in 0.059384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005185 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Text Mesh Icon.png
+  artifactKey: Guid(dd281a370fbae8d4b954ee06bdff617b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Text Mesh Icon.png using Guid(dd281a370fbae8d4b954ee06bdff617b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee16b4475b36300f054d34b8569c796e') in 0.017133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003934 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageFontListTextMeshPro.cs
+  artifactKey: Guid(771b0c1ed1f9fae4da4f9df46e1c5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageFontListTextMeshPro.cs using Guid(771b0c1ed1f9fae4da4f9df46e1c5941) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f089d6a4a4cc46a80ec0c1cf8bf708b3') in 0.004076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003715 seconds.
+  path: Assets/Language/Fonts/Times New Roman/times new roman SDF.asset
+  artifactKey: Guid(88b6967dd8e24264bb32c3f14fedfdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts/Times New Roman/times new roman SDF.asset using Guid(88b6967dd8e24264bb32c3f14fedfdd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7ba58498795916310d9ada691ae583') in 0.022288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003717 seconds.
+  path: Assets/Language/Script/Legacy/SaveLegacyInformation.cs
+  artifactKey: Guid(5c1c0a7f6a36acb4187c279dbeecfc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/SaveLegacyInformation.cs using Guid(5c1c0a7f6a36acb4187c279dbeecfc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ae9da790e31ab09f18a15facdb8f05') in 0.003702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002872 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Toggle_LT_Legacy.cs
+  artifactKey: Guid(38d4b1b23e5416743baf11c54716908b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_Toggle_LT_Legacy.cs using Guid(38d4b1b23e5416743baf11c54716908b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5979cd15a0f4db164edf2c6218aa915c') in 0.003628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.013774 seconds.
+  path: Assets/StreamingAssets/Language/ENGLISH - Base File.txt
+  artifactKey: Guid(b7bf90bef51ec2d4fbd47d1318b195b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/ENGLISH - Base File.txt using Guid(b7bf90bef51ec2d4fbd47d1318b195b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0c3a78bf6d3eb820bb272800b8e3b24') in 0.004377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002975 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Dropdown_LT_Legacy.cs
+  artifactKey: Guid(4a0d914dec04a8d4f8ea4965a8cac911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Dropdown_LT_Legacy.cs using Guid(4a0d914dec04a8d4f8ea4965a8cac911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34489f08141516b769bf6a8553e3fae7') in 0.003629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003845 seconds.
+  path: Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Toggle_LT_Legacy.cs
+  artifactKey: Guid(16667e99269a89b448f3206b0c6b906c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/Legacy/Canvas_Toggle_LT_Legacy.cs using Guid(16667e99269a89b448f3206b0c6b906c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffb3f7b47a300704b3f9b586a84da02d') in 0.003270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003996 seconds.
+  path: Assets/Language/Script/Legacy/LanguageText.cs
+  artifactKey: Guid(9947169f88507274dac888f9cb3e9426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageText.cs using Guid(9947169f88507274dac888f9cb3e9426) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07d82c05ce022421ce601422c9282ae') in 0.004031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003412 seconds.
+  path: Assets/Language/Script/Legacy/LanguageTextInputField.cs
+  artifactKey: Guid(24297a5b854408d47849f11b4f8de7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageTextInputField.cs using Guid(24297a5b854408d47849f11b4f8de7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e33c0b7c21900d8ad266c1d247b402') in 0.003554 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003883 seconds.
+  path: Assets/Language/Editor/LanguageFileSave.json
+  artifactKey: Guid(2a633dd4b5c27d040b06b092bf9800a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/LanguageFileSave.json using Guid(2a633dd4b5c27d040b06b092bf9800a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef506025366872711150064bf97b4088') in 0.004280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001763 seconds.
+  path: Assets/Language/Fonts
+  artifactKey: Guid(a2dcc6ade9ff86c4a87abff57139550f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Fonts using Guid(a2dcc6ade9ff86c4a87abff57139550f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eadcd773bab0ff2c68c882afab4895c') in 0.003767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003605 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageTextTextMeshPro.cs
+  artifactKey: Guid(a7b478fa282c71c4dbb1053a94d3fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageTextTextMeshPro.cs using Guid(a7b478fa282c71c4dbb1053a94d3fde0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d386228ddbdcd169373d8280614f477') in 0.003667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004356 seconds.
+  path: Assets/Language/Script/Legacy/LanguageDropdownOptions.cs
+  artifactKey: Guid(407d368dee0644742993da05d4e9aab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageDropdownOptions.cs using Guid(407d368dee0644742993da05d4e9aab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2634cbbcf2a8ec7b79c4191ebd338b3') in 0.003387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000807 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro
+  artifactKey: Guid(7e08c98f53a674f409590658310e968c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro using Guid(7e08c98f53a674f409590658310e968c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ebc1b452d0a424642b61799a2ad7ee') in 0.002435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.007411 seconds.
+  path: Assets/Language/Editor/Test File.txt
+  artifactKey: Guid(dac8e0624790cbb4ea418f0cd9b09b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Test File.txt using Guid(dac8e0624790cbb4ea418f0cd9b09b2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b52f1018f74ad4a0be7e86ca3df90d') in 0.005263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004373 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Text Icon.png
+  artifactKey: Guid(6f70e86079b89a34499b8c0236bb563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Text Icon.png using Guid(6f70e86079b89a34499b8c0236bb563b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dff46ce54e5a9debdbc3bbf8e3d02e8') in 0.017063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002705 seconds.
+  path: Assets/Language/Editor/Icon/Legacy
+  artifactKey: Guid(b64f7b6a565d61240ba6e711f92d0c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Legacy using Guid(b64f7b6a565d61240ba6e711f92d0c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a6c21d866f8f70cbc768c057feb3eb5') in 0.002393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001373 seconds.
+  path: Assets/Language/Editor/Script/Font Lists
+  artifactKey: Guid(5ff0af81040567f4496d16427b2f31a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Font Lists using Guid(5ff0af81040567f4496d16427b2f31a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f5d4ee3439e2ff9b8c6b22e3c276aa') in 0.003932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001488 seconds.
+  path: Assets/Language/Editor/Script/Canvas
+  artifactKey: Guid(cc607a8663806c543af79e10a9360d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas using Guid(cc607a8663806c543af79e10a9360d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2696a7ebd672ce205a14fa596c2974e0') in 0.002652 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003657 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageTextInputFieldTextMeshPro.cs
+  artifactKey: Guid(65362a80eb9df9c4a94a687d6d70ef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageTextInputFieldTextMeshPro.cs using Guid(65362a80eb9df9c4a94a687d6d70ef58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582b3e6186a2086a53614d6271936ff0') in 0.003815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014312 seconds.
+  path: Assets/StreamingAssets/Language/PORTUGUÊS BR.txt
+  artifactKey: Guid(252835883bf870d488fe175f9d6969dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/PORTUGUÊS BR.txt using Guid(252835883bf870d488fe175f9d6969dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec575453f71fd2cb554882386c05bc8c') in 0.004047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001110 seconds.
+  path: Assets/Language/Prefab/Legacy/Scene
+  artifactKey: Guid(7fa81d44c2c641c4a90a50ace1bb1fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy/Scene using Guid(7fa81d44c2c641c4a90a50ace1bb1fdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84b82fe90ba38aa60f5964e25d26741') in 0.002384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002171 seconds.
+  path: Assets/Language/Editor/Script/Screens/TextMesh Pro
+  artifactKey: Guid(d71e3f456e63820409785e731f7e0356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Screens/TextMesh Pro using Guid(d71e3f456e63820409785e731f7e0356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c2e81d9c4d7505e72bb5df855a819c') in 0.002606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000665 seconds.
+  path: Assets/Language/Editor/Script/Font Lists/Legacy
+  artifactKey: Guid(36ec23d9c52011a408c9c078a627c950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Font Lists/Legacy using Guid(36ec23d9c52011a408c9c078a627c950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a24246b136d3cef33610a1bf50d9ec') in 0.002794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003662 seconds.
+  path: Assets/Language/Editor/Script/Font Lists/Legacy/LanguageFontList_LT_Legacy.cs
+  artifactKey: Guid(95b6f7bdce2276a439ea4637c7975f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Font Lists/Legacy/LanguageFontList_LT_Legacy.cs using Guid(95b6f7bdce2276a439ea4637c7975f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de2a1e19174b69975a4c3c1543fcc44') in 0.004196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001801 seconds.
+  path: Assets/Language/Editor/Script/Scene/TextMesh Pro
+  artifactKey: Guid(22976a55a380755448f57d902cec33bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene/TextMesh Pro using Guid(22976a55a380755448f57d902cec33bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dcf3dde7c462e9cd0e2c1ef93449ff') in 0.002968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004429 seconds.
+  path: Assets/Language/Script/TextMesh Pro/LanguageTextMeshTextMeshPro.cs
+  artifactKey: Guid(f03e0e750f0d0ca4583774fa776355df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/TextMesh Pro/LanguageTextMeshTextMeshPro.cs using Guid(f03e0e750f0d0ca4583774fa776355df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3e8bcf0502c30a84b0aa4638d7af69') in 0.004182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001901 seconds.
+  path: Assets/Language/Prefab
+  artifactKey: Guid(a87036ee22e9e644d9eb4d58e91fc7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab using Guid(a87036ee22e9e644d9eb4d58e91fc7c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7ee62571ee5b8b32a6357d7b37e97e') in 0.003041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001099 seconds.
+  path: Assets/Language/Script/Screens
+  artifactKey: Guid(1d6cfca76d35da44aadc165c0c3f3594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Screens using Guid(1d6cfca76d35da44aadc165c0c3f3594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886186e148dc5fbe70029de88dec5e2b') in 0.003617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000664 seconds.
+  path: Assets/Language/Editor/Script/Scene/Legacy
+  artifactKey: Guid(8bc0e39bf2fe8f844969f355daac47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene/Legacy using Guid(8bc0e39bf2fe8f844969f355daac47d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edab02efdae36b609795b4b42eb79b6e') in 0.003474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003026 seconds.
+  path: Assets/Language/Editor/Script/Screens/TextMesh Pro/MeuEditorAddComponentTextMeshPro.cs
+  artifactKey: Guid(19f0d96d26e02b042964da4e8235b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Screens/TextMesh Pro/MeuEditorAddComponentTextMeshPro.cs using Guid(19f0d96d26e02b042964da4e8235b1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6f43a3cd01b91200fa2a18c80ffd35f') in 0.005067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001824 seconds.
+  path: Assets/Language/Script
+  artifactKey: Guid(0a2ef50f1920c654e85b30b3052c4db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script using Guid(0a2ef50f1920c654e85b30b3052c4db9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676f6847d737c28fa13813cc4bb3d67b') in 0.002719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002857 seconds.
+  path: Assets/Language/Editor/Icon/Language Create File Icon .png
+  artifactKey: Guid(af2934702ff0cd642a7776087b15a9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/Language Create File Icon .png using Guid(af2934702ff0cd642a7776087b15a9ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd516fc6585aef1d5b18bc98253ca905') in 0.014209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003873 seconds.
+  path: Assets/Language/Script/Legacy/LanguageFontList.cs
+  artifactKey: Guid(b01c0115030fe184fa267e07e9ef86f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Script/Legacy/LanguageFontList.cs using Guid(b01c0115030fe184fa267e07e9ef86f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cce0f06eb3b4f1218b125f79c75c8d2') in 0.004204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002277 seconds.
+  path: Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Font List Icon.png
+  artifactKey: Guid(9255a6a285a08b647acef96be8e7faf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Icon/TextMesh Pro/TextMesh Pro Language Font List Icon.png using Guid(9255a6a285a08b647acef96be8e7faf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006980181697b8bd8e575213bb4945fe') in 0.011642 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003338 seconds.
+  path: Assets/Language/Editor/Script/Scene/TextMesh Pro/TextMeshProCanvas_NewText_LT_Legacy.cs
+  artifactKey: Guid(4597c19481466c443af9d2fa721d1e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Scene/TextMesh Pro/TextMeshProCanvas_NewText_LT_Legacy.cs using Guid(4597c19481466c443af9d2fa721d1e35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5dfb77fa562bc9361adc45093ce4431') in 0.004258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002904 seconds.
+  path: Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_InputField_LT_Legacy.cs
+  artifactKey: Guid(d14c9a82ea7e02d47a5352ff40fc5953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Editor/Script/Canvas/TextMesh Pro/TextMeshProCanvas_InputField_LT_Legacy.cs using Guid(d14c9a82ea7e02d47a5352ff40fc5953) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30003f3c1c2360cfa680b85c471194b3') in 0.003908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002040 seconds.
+  path: Assets/Language/Prefab/Legacy
+  artifactKey: Guid(5249497f0b9d0ed4993c037d21cc1b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Language/Prefab/Legacy using Guid(5249497f0b9d0ed4993c037d21cc1b02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be713d58fb1b3a98814d96315d59262d') in 0.002588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.207690 seconds.
+  path: Assets/StreamingAssets/Language/ENGLISH (2).txt
+  artifactKey: Guid(f7663f468f39b1e4995060c894f11363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/ENGLISH (2).txt using Guid(f7663f468f39b1e4995060c894f11363) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62880bf2ff70ec2074619c8302ae48b3') in 0.005076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.103040 seconds.
+  path: Assets/StreamingAssets/Language/Saves
+  artifactKey: Guid(ac272052b0f06ab4f9f421bba32f57ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/Saves using Guid(ac272052b0f06ab4f9f421bba32f57ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01a0ecba0e1cb11163fd6a4fedcbf481') in 0.005456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.467225 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5648c5ef36b7beab651a001a8d08867') in 0.003477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.536819 seconds.
+  path: Assets/StreamingAssets/Language/Saves/ENGLISH - Base File.txt
+  artifactKey: Guid(99e36c2a74703ae44974f1a7a196c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/StreamingAssets/Language/Saves/ENGLISH - Base File.txt using Guid(99e36c2a74703ae44974f1a7a196c2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7628b03705c0cf42e4eb08e259e0d8e') in 0.004329 seconds 
