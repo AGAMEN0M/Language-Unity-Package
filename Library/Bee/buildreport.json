@@ -1,0 +1,977 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239691912E+15,"dur": 5263816, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239695408E+15,"dur": 17483, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.6861223970282E+15,"dur": 15630, "ph":"X", "name": "Prepare For Build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239704386E+15,"dur": 1982520, "ph":"X", "name": "ProducePlayerScriptAssemblies"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239807823E+15,"dur": 947936, "ph":"X", "name": "Prebuild Cleanup and Recompile"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239808316E+15,"dur": 319794, "ph":"X", "name": "Compile scripts"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239840296E+15,"dur": 623205, "ph":"X", "name": "Generate and validate platform script types"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239902639E+15,"dur": 136990, "ph":"X", "name": "Verify Build setup"},
+{ "pid": "Unity", "tid": 1,"ts": 1.6861223990417E+15,"dur": 110542, "ph":"X", "name": "Check old data build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239915224E+15,"dur": 11113, "ph":"X", "name": "Set up scripts only build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239916342E+15,"dur": 150183, "ph":"X", "name": "Prepare assets for target platform"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239931415E+15,"dur": 1233831, "ph":"X", "name": "Run script only build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239932776E+15,"dur": 1220191, "ph":"X", "name": "Build scripts DLLs"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612239963833E+15,"dur": 801337, "ph":"X", "name": "GetReferencedAssemblies"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612240055066E+15,"dur": 1546604, "ph":"X", "name": "Postprocess built player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612240075845E+15,"dur": 43902, "ph":"X", "name": "Setup incremental player build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612240080235E+15,"dur": 1212585, "ph":"X", "name": "Incremental player build"},
+{ "pid": "Unity", "tid": 1,"ts": 1.68612240201622E+15,"dur": 10831, "ph":"X", "name": "Report output files"},
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1686122398201934, "dur": 178997, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122398203382, "dur": 26076, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122398229601, "dur": 140760, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122398370380, "dur": 10550, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122398385474, "dur": 903, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1686122398294185, "dur":4450, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398298644, "dur":4123, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1686122398302795, "dur":16, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1686122398302811, "dur":405, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1686122398303251, "dur":2108, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398305360, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335724, "dur":68, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335792, "dur":14, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335806, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335809, "dur":23, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335832, "dur":69, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335903, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335912, "dur":77, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335989, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398335996, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336000, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336006, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336009, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336015, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336018, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336023, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336026, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336032, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336044, "dur":38, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398336088, "dur":2405, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1686122398303883, "dur":1522, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398305407, "dur":970, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398306383, "dur":1727, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.UI.rsp" }}
+,{ "pid":12345, "tid":1, "ts":1686122398308110, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398308195, "dur":6850, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.UI.dll (+2 others)" }}
+,{ "pid":12345, "tid":1, "ts":1686122398315045, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398315129, "dur":1337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.dll (+2 others)" }}
+,{ "pid":12345, "tid":1, "ts":1686122398316466, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398316563, "dur":881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.dll (+2 others)" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317445, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317531, "dur":322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.State.dll (+2 others)" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317853, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317924, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Core.ref.dll_32A52FE43A939245.mvfrm" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317927, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317953, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Flow.ref.dll_79B6103ABC9D06F4.mvfrm" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317956, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317979, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.State.ref.dll_5A0D9DDFEAE09581.mvfrm" }}
+,{ "pid":12345, "tid":1, "ts":1686122398317982, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318003, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Assembly-CSharp.dll (+2 others)" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318275, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318329, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318330, "dur":20, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318354, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398318357, "dur":7717, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122398326077, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122398326082, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398326141, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122398326148, "dur":9104, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122398335253, "dur":474, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398304012, "dur":1430, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398305444, "dur":369, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398305814, "dur":380, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306195, "dur":569, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306764, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DirectorModule.dll_A31956B770824019.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306805, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306837, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterInputModule.dll_E913898992EB11CD.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306853, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398306889, "dur":388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.State.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307277, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307336, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307337, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307373, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsNativeModule.dll_B6A079A3D8CB3A0F.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307395, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307424, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AudioModule.dll_70242BDAAC4E00FD.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307437, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307460, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AssetBundleModule.dll_F65002419387F959.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307477, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307500, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ARModule.dll_71E657870BC484CE.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307514, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307534, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AnimationModule.dll_1CE0D5847A88CACB.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307548, "dur":18, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307567, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AndroidJNIModule.dll_206EAF55D99BEE43.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307579, "dur":19, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307598, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AIModule.dll_B8739283AEA72605.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307610, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307628, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.AccessibilityModule.dll_57772DC34AB94D65.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307646, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307688, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.XRModule.dll_39781A3B35E2FE87.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307718, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307761, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.WindModule.dll_8AECF62B95EF9165.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307790, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307831, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VRModule.dll_06B95736ACA8B129.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307858, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307936, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VirtualTexturingModule.dll_DB2D2E12B179BA9A.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398307991, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308044, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VideoModule.dll_952DB0456EE01CA2.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308085, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308144, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VehiclesModule.dll_1ADC5036EAAC0FB4.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308193, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308229, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestTextureModule.dll_1C07C22176F45C88.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308249, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308297, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAudioModule.dll_B5AD787619956E53.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308323, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308363, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestAssetBundleModule.dll_F8ACBC923FFB62EF.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308394, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308437, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityCurlModule.dll_4FFD76B5EA9CBCB8.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308482, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308524, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsModule.dll_E58E87A670E0399E.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308548, "dur":341, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308891, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteMaskModule.dll_33E86C00C14C74AE.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398308957, "dur":327, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398309304, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":2, "ts":1686122398309319, "dur":81, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398309403, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.State.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":2, "ts":1686122398309420, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398309517, "dur":3849, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398313367, "dur":791, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314158, "dur":292, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314450, "dur":327, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314777, "dur":23, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314801, "dur":22, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314823, "dur":18, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314841, "dur":14, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314856, "dur":11, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314867, "dur":14, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398314881, "dur":403, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315285, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.dll.mvfrm" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315425, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315475, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315477, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315512, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398315516, "dur":9731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122398325251, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122398325256, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398325313, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122398325319, "dur":6473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122398331794, "dur":3961, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398303919, "dur":1492, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398305413, "dur":409, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398305822, "dur":360, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398306182, "dur":384, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398306567, "dur":705, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":3, "ts":1686122398307272, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398307345, "dur":1591, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.rsp" }}
+,{ "pid":12345, "tid":3, "ts":1686122398308936, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398308969, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.Physics2DModule.dll_6986C5751B85C260.mvfrm" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309005, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309033, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputModule.dll_D699F38B228625A1.mvfrm" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309054, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309081, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.HotReloadModule.dll_9E29938A55BBE64D.mvfrm" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309104, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309134, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.dll_350649092BD4A5D9.mvfrm" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309157, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309190, "dur":429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.TestRunner.rsp" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309620, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398309700, "dur":4153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.TestRunner.dll (+2 others)" }}
+,{ "pid":12345, "tid":3, "ts":1686122398313854, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398313972, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122398313975, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398314019, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398315672, "dur":6664, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/UnityEngine.TestRunner.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122398322337, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122398322340, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398322368, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122398322371, "dur":6802, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122398329176, "dur":6546, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398304046, "dur":1402, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398305451, "dur":355, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398305806, "dur":376, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398306182, "dur":241, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398306423, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.UI.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":4, "ts":1686122398306429, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398306469, "dur":2072, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.rsp" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308541, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308627, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UmbraModule.dll_EAF8D7F33974AC70.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308670, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308710, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TLSModule.dll_57ADBBA6B9DBA2C2.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308741, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308781, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreTextEngineModule.dll_45B6B9ED99DB1218.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308802, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308831, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubsystemsModule.dll_9E95D2628F945CC1.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308849, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308881, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SpriteShapeModule.dll_0FB12F9C492A3163.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308902, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308933, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll_0A468C14A46FF329.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308957, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398308992, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PerformanceReportingModule.dll_3DB12497932AA3BB.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309013, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309044, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.InputLegacyModule.dll_87951D602B79AF4A.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309064, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309099, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GIModule.dll_50AFDB914A560E1F.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309122, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309155, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.VisualScripting.Antlr3.Runtime.dll_DE45AF28B38AF859.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309190, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309208, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.TestRunner.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309209, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309270, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309281, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309345, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.UI.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309353, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309427, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.UI.dll.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309531, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398309609, "dur":1648, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398311258, "dur":573, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398311833, "dur":586, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398312419, "dur":877, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398313297, "dur":311, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398313608, "dur":326, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398313935, "dur":280, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398314215, "dur":333, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398314549, "dur":400, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398314949, "dur":181, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315130, "dur":665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.dll (+2 others)" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315795, "dur":147, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315943, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.Timeline.ref.dll_6B625E4645B19820.mvfrm" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315948, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315989, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1686122398315991, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398316044, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398316050, "dur":6375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1686122398322426, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1686122398322428, "dur":21, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398322451, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122398322454, "dur":8151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":4, "ts":1686122398330610, "dur":5113, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398304101, "dur":1354, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398305458, "dur":366, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398305824, "dur":368, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398306193, "dur":562, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398306755, "dur":2210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.rsp" }}
+,{ "pid":12345, "tid":5, "ts":1686122398308965, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309018, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.LocalizationModule.dll_276053DC2A6704C6.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309055, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309096, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GridModule.dll_F20F36F11D0DA8F3.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309125, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309158, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Assembly-CSharp.rsp" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309365, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398309461, "dur":3067, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398312528, "dur":1833, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398314361, "dur":298, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398314659, "dur":413, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315072, "dur":59, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315131, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_12442A9E8ACBB5F1.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315137, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315208, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.dll.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315318, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315366, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.dll.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315475, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315524, "dur":357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315881, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315884, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315924, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398315928, "dur":5668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321598, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Assembly-CSharp.dll.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321660, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321689, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.State.dll.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321743, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321768, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.dll.mvfrm" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321822, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321849, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321851, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321944, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122398321962, "dur":4794, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122398326759, "dur":8978, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398304200, "dur":1263, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398305465, "dur":376, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398305841, "dur":384, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398306225, "dur":535, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398306760, "dur":548, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":6, "ts":1686122398307309, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398307364, "dur":1158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308523, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308622, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UNETModule.dll_A74462EC51C80875.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308671, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308709, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIElementsModule.dll_A2D433CA92C098B8.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308729, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308758, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextRenderingModule.dll_FAB5D68F15985A46.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308780, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308808, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainModule.dll_86F891939221A65C.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308828, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308891, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SharedInternalsModule.dll_E5B22A0ECA5F4688.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308917, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308952, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ProfilerModule.dll_D55F8FEE09DBC726.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398308976, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309021, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.JSONSerializeModule.dll_B78EB6FF49F4ADEF.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309075, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309112, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.GameCenterModule.dll_4ABBF9709FDCDF34.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309194, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309266, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309279, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309353, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.TestRunner.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309364, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309462, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractorCombine Library/Bee/artifacts/1900b0aPDevDbg.dag/UnityEngine.TestRunner.dll.mvfrm" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309777, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398309822, "dur":1092, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398310915, "dur":442, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398311358, "dur":971, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398312331, "dur":2148, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314480, "dur":319, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314799, "dur":9, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314808, "dur":28, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314837, "dur":14, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314852, "dur":15, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314867, "dur":13, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314880, "dur":10, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398314890, "dur":276, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398315167, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122398315170, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398315208, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398315212, "dur":10090, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122398325303, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122398325307, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398325335, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122398325338, "dur":7225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122398332564, "dur":3173, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398304343, "dur":1129, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398305475, "dur":411, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398305887, "dur":392, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398306279, "dur":538, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398306817, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClusterRendererModule.dll_F5AEED88D10C9344.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398306852, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398306885, "dur":1150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.VisualScripting.State.rsp" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308035, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308112, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.VFXModule.dll_D88C541590490C2F.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308153, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308214, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestWWWModule.dll_1078FF49899ACE84.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308241, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308294, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityWebRequestModule.dll_733FF2E35E25E5B7.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308327, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308387, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityTestProtocolModule.dll_2E4ED5A4F7272D26.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308422, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308511, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityConnectModule.dll_56D69882DBEB3FB2.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308533, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308620, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UnityAnalyticsCommonModule.dll_D8EFE1DBAD134219.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308646, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308678, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.UIModule.dll_B3E730B10AEE2BB1.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308709, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308740, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TilemapModule.dll_25F4F914A9DE8765.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308764, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308792, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TerrainPhysicsModule.dll_C669BFAFDDFBE22F.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308812, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308852, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.StreamingModule.dll_D175C2D4CA108209.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398308911, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309015, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ParticleSystemModule.dll_C5EF16DCC4B8E7A2.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309036, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309064, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.IMGUIModule.dll_A883CB41727F94DE.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309084, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309117, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.DSPGraphModule.dll_A86AB820E2E3113A.mvfrm" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309145, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309173, "dur":386, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Assembly-CSharp.AdditionalFile.txt" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309559, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398309632, "dur":2454, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398312087, "dur":478, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398312565, "dur":787, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398313354, "dur":295, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398313649, "dur":328, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398313978, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/UnityEngine.TestRunner.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1686122398313982, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398314019, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398314950, "dur":5655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/UnityEngine.TestRunner.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1686122398320611, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1686122398320614, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398320639, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398320642, "dur":5887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":7, "ts":1686122398326533, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122398326537, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398326587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122398326592, "dur":9108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122398335701, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"ScriptAssemblies" }}
+,{ "pid":12345, "tid":7, "ts":1686122398335703, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398304377, "dur":1103, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398305480, "dur":395, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398305875, "dur":393, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306269, "dur":533, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306803, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CoreModule.dll_149E1B0304B912FC.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306835, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306870, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ClothModule.dll_D70C88D5866ADFE1.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306894, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398306925, "dur":1736, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.Timeline.rsp" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308661, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308697, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.CrashReportingModule.dll_72DCCD9056A75C14.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308750, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308790, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.TextCoreFontEngineModule.dll_FDCE837C0A5758FA.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308809, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308839, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.SubstanceModule.dll_AE20D71E15638017.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308866, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308900, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ScreenCaptureModule.dll_D17664845E60DA51.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308922, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308959, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.PhysicsModule.dll_6CB21624BC635D6E.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398308981, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309066, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEngine.ImageConversionModule.dll_61A0EB3953314B38.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309115, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309261, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Assembly-CSharp.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309272, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309343, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.dll.mvfrm.rsp" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309358, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398309408, "dur":1450, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398310859, "dur":342, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398311201, "dur":545, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398311748, "dur":447, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398312196, "dur":737, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398312933, "dur":401, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398313335, "dur":297, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398313632, "dur":401, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398314033, "dur":330, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398314364, "dur":351, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398314716, "dur":241, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398314957, "dur":173, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315131, "dur":633, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Csc Library/Bee/artifacts/1900b0aPDevDbg.dag/Unity.TextMeshPro.dll (+2 others)" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315764, "dur":110, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315877, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/Unity.TextMeshPro.ref.dll_723EFD6A007FE69A.mvfrm" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315883, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315920, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles Library/PlayerScriptAssemblies/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315922, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315953, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122398315956, "dur":11058, "ph":"X", "name": "CopyFiles",  "args": { "detail":"Library/PlayerScriptAssemblies/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122398327016, "dur":8740, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122398341452, "dur":2723, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1686122398386525, "dur": 2209, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122398383762, "dur": 5005, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1686122400803338, "dur": 1209742, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122400803601, "dur": 10119, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122400813724, "dur": 106128, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122400919960, "dur": 683369, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122401603332, "dur": 398155, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122402001488, "dur": 11590, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122402013917, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1686122401298517, "dur": 275629, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401299912, "dur": 110136, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401542195, "dur": 9764, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401551964, "dur": 22173, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401552766, "dur": 20038, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401583489, "dur": 1614, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1686122401581778, "dur": 3363, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122402014034, "dur": 452, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1686122401681585, "dur":3049, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401684637, "dur":47, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1686122401684696, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1686122401684713, "dur":394, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1686122401685145, "dur":640, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401685785, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984200, "dur":184, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984384, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984394, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984397, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984404, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984407, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984413, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984416, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984425, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984427, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984434, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984436, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984442, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984445, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984452, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984455, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984460, "dur":1, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984469, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401984476, "dur":2911, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1686122401685722, "dur":70, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401685793, "dur":7600, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401693409, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1686122401693512, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401695446, "dur":4364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1686122401699833, "dur":418, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1686122401700258, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401700275, "dur":2690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1686122401702984, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401703025, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401703036, "dur":143233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401846288, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401846309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401846320, "dur":4491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401850834, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401850858, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401850868, "dur":7980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401858873, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401858897, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401858909, "dur":6911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401865837, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401865859, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401865869, "dur":2902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401868785, "dur":3029, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401871826, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401871919, "dur":8741, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401880680, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401880702, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401880714, "dur":3827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401884558, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401884593, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401884607, "dur":5700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401890395, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401890474, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401890506, "dur":8242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1686122401898775, "dur":708, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/Saves/ENGLISH - Base File.txt" }}
+,{ "pid":12345, "tid":1, "ts":1686122401899490, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1686122401900863, "dur":70630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/Saves/ENGLISH - Base File.txt" }}
+,{ "pid":12345, "tid":1, "ts":1686122401971566, "dur":12635, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401685766, "dur":42, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401685808, "dur":7586, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401693409, "dur":100, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1686122401693516, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401695969, "dur":3835, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1686122401699821, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1686122401699856, "dur":32, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401700515, "dur":2308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1686122401702844, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401702952, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401702961, "dur":8577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/WinPixEventRuntime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401711565, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401711600, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401711634, "dur":19174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401730847, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401730880, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401730895, "dur":23396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401754319, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401754351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401754401, "dur":9986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401764408, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401764426, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401764436, "dur":5039, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401769497, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401769527, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401769534, "dur":10578, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401780131, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401780165, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401780246, "dur":17107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401797382, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401797424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401797440, "dur":15542, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401813007, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401813034, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401813045, "dur":18512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401831581, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401831608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401831623, "dur":11352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401843025, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401843084, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401843106, "dur":4805, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401847935, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401847956, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401847966, "dur":2964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401850946, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401850968, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401851001, "dur":7928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401858954, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401858984, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401858996, "dur":5509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401864523, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401864540, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401864548, "dur":3205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401867773, "dur":1960, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401869741, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401869756, "dur":7966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401877744, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401877763, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401877773, "dur":3444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401881238, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401881260, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401881270, "dur":3991, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401885276, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401885292, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401885299, "dur":10345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401895666, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401895690, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401895704, "dur":5714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":2, "ts":1686122401901437, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1686122401901471, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401901498, "dur":12158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1686122401913677, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1686122401913731, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401913743, "dur":15575, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":2, "ts":1686122401929350, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1686122401929405, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401929422, "dur":6297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1686122401935739, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1686122401935776, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1686122401935786, "dur":11933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1686122401947740, "dur":36451, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401685750, "dur":52, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401685802, "dur":7589, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401693409, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1686122401693509, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401695525, "dur":4110, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1686122401699647, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1686122401699679, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401699689, "dur":2591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1686122401702295, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1686122401702332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401702344, "dur":5253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":3, "ts":1686122401707630, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1686122401707759, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401708691, "dur":45935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1686122401754701, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401754761, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401754785, "dur":9642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401764442, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401764459, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401764466, "dur":15666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401780152, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401780230, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401780246, "dur":16994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401797266, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401797297, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401797314, "dur":16132, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401813468, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401813518, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401813529, "dur":18024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401831582, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401831670, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401831682, "dur":13471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401845190, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401845237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401845260, "dur":3439, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401848711, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401848725, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401848733, "dur":2224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401850977, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401851005, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401851014, "dur":7313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401858356, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401858514, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401858543, "dur":3806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401862366, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401862382, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401862390, "dur":3748, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401866164, "dur":1120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401867287, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401867297, "dur":2234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401869550, "dur":2574, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1686122401872184, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401872198, "dur":8555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.Timeline.pdb" }}
+,{ "pid":12345, "tid":3, "ts":1686122401880774, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401880805, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401880820, "dur":4242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401885081, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401885127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401885138, "dur":10483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401895670, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401895695, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401895735, "dur":3959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1686122401899719, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/PORTUGUS BR.txt" }}
+,{ "pid":12345, "tid":3, "ts":1686122401899747, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1686122401900780, "dur":83367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/PORTUGUS BR.txt" }}
+,{ "pid":12345, "tid":3, "ts":1686122401984164, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":3, "ts":1686122401984166, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401685790, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401685790, "dur":7597, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401693409, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686122401693415, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401693513, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686122401693519, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401696888, "dur":2310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/app.info" }}
+,{ "pid":12345, "tid":4, "ts":1686122401699202, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1686122401699242, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401699271, "dur":2302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1686122401701594, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1686122401701633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401701649, "dur":3724, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1686122401705436, "dur":112378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor.exe" }}
+,{ "pid":12345, "tid":4, "ts":1686122401817818, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401817828, "dur":76406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor.exe" }}
+,{ "pid":12345, "tid":4, "ts":1686122401894272, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686122401894308, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401894332, "dur":5444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1686122401900166, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/ENGLISH.txt" }}
+,{ "pid":12345, "tid":4, "ts":1686122401900224, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1686122401900652, "dur":79989, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/ENGLISH.txt" }}
+,{ "pid":12345, "tid":4, "ts":1686122401980658, "dur":3531, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401685822, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401685823, "dur":7566, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401693408, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1686122401693519, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401697533, "dur":2267, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1686122401699821, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1686122401699889, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401699901, "dur":2638, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1686122401702560, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401702597, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401702891, "dur":10898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401713804, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401713838, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401713847, "dur":16522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401730417, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401730470, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401730483, "dur":27815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401758405, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401758471, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401758729, "dur":10755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401769527, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401769550, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401769561, "dur":16959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401786539, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401786583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401786596, "dur":26131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401812748, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401812774, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401812790, "dur":6593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401819400, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401819424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401819434, "dur":12209, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401831665, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401831716, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401831729, "dur":8816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401840577, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401840694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401840718, "dur":6389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401847131, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401847155, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401847165, "dur":3736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401850923, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401850950, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401850964, "dur":7545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401858575, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401858607, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401858621, "dur":4684, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401863326, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401863359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401863367, "dur":2763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401866218, "dur":1666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401867888, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401867897, "dur":2468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Flow.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401870384, "dur":6462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401876855, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401876876, "dur":4017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.TextMeshPro.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401880912, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401880931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401880946, "dur":4216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401885186, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401885213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401885224, "dur":11810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1686122401897054, "dur":998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401898056, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401898065, "dur":4446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Assembly-CSharp.pdb" }}
+,{ "pid":12345, "tid":5, "ts":1686122401902530, "dur":375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1686122401902909, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401902918, "dur":33071, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1686122401936007, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1686122401936045, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1686122401936056, "dur":14526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1686122401950605, "dur":33585, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401685852, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401685853, "dur":7568, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401693421, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1686122401693543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401698402, "dur":2759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1686122401701178, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1686122401701235, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401701246, "dur":2339, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1686122401703605, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1686122401703646, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401703658, "dur":142649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1686122401846329, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401846352, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401846359, "dur":4342, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401850718, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401850766, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401850776, "dur":7362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401858177, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401858293, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401858344, "dur":4236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401862601, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401862625, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401862635, "dur":3511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401866163, "dur":1396, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122401867562, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401867571, "dur":2405, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.State.pdb" }}
+,{ "pid":12345, "tid":6, "ts":1686122401869995, "dur":3292, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401873306, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401873345, "dur":7563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401880926, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401880946, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401880964, "dur":4273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401885260, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401885287, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401885303, "dur":11374, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401896697, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401896720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401896734, "dur":4668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1686122401901422, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/ENGLISH - Base File.txt" }}
+,{ "pid":12345, "tid":6, "ts":1686122401901452, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1686122401901479, "dur":65631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/StreamingAssets/Language/ENGLISH - Base File.txt" }}
+,{ "pid":12345, "tid":6, "ts":1686122401967126, "dur":17059, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401685888, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401685888, "dur":7504, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401693409, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1686122401693543, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401697761, "dur":2191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1686122401699971, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1686122401700227, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401700263, "dur":2434, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1686122401702719, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401702758, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401702978, "dur":58969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401761967, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401762004, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401762050, "dur":7376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401769450, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401769476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401769521, "dur":10607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401780148, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401780176, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401780253, "dur":15350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401795638, "dur":15111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401810766, "dur":8, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401810819, "dur":8203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401819050, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401819086, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401819101, "dur":12497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401831618, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401831651, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401831666, "dur":13759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401845623, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401845699, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401845715, "dur":4981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401850714, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401850760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401850772, "dur":6541, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401857393, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401857486, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401857529, "dur":4611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401862168, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401862188, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401862200, "dur":3761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401865982, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401866005, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401866015, "dur":2961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401868989, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401869005, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401869012, "dur":7706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401876746, "dur":2503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401879255, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401879409, "dur":3950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401883375, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401883391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401883400, "dur":3488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401886902, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401886919, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401886930, "dur":10264, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401897212, "dur":1101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401898316, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401898324, "dur":3648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":7, "ts":1686122401901995, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":7, "ts":1686122401902070, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401902083, "dur":27201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":7, "ts":1686122401929313, "dur":1057, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":7, "ts":1686122401930375, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401930386, "dur":1898, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":7, "ts":1686122401932300, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1686122401932340, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401932352, "dur":3649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1686122401936017, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1686122401936050, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1686122401936057, "dur":14493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":7, "ts":1686122401950576, "dur":33611, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401685923, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401685923, "dur":7504, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401693428, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1686122401693509, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401695651, "dur":3897, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1686122401699567, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1686122401699599, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401699611, "dur":2666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1686122401702295, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1686122401702332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401702344, "dur":7027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":8, "ts":1686122401709451, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401709488, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401710743, "dur":19631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401730419, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401730466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401730483, "dur":14089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401744592, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401744616, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401744628, "dur":17287, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401761938, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401761967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401761988, "dur":7529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401769537, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401769559, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401769568, "dur":19469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401789063, "dur":15186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1686122401804260, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401804281, "dur":14894, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.UI.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1686122401819195, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401819226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401819242, "dur":12336, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401831605, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401831630, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401831643, "dur":13566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401845236, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401845301, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401845316, "dur":3647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401848980, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401849005, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401849015, "dur":2534, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401851566, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401851592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401851606, "dur":7605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401859232, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401859302, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401859391, "dur":5118, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401864538, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401864553, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401864560, "dur":3440, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401868022, "dur":2177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1686122401870202, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401870210, "dur":9491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/Unity.VisualScripting.Core.pdb" }}
+,{ "pid":12345, "tid":8, "ts":1686122401879722, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401879750, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401879765, "dur":4969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401884762, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401884784, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401884794, "dur":10886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401895709, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401895738, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401895751, "dur":6460, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1686122401902231, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1686122401902278, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401902291, "dur":30752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1686122401933058, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1686122401933106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401933114, "dur":3435, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/level1" }}
+,{ "pid":12345, "tid":8, "ts":1686122401936566, "dur":1146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1686122401937731, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1686122401938008, "dur":10902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical Time/Under Development/Language/Language Editor/LanguageEditor_Data/boot.config" }}
+,{ "pid":12345, "tid":8, "ts":1686122401948932, "dur":35256, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1686122401993669, "dur":2083, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1686122402014538, "dur": 976, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1686122402013906, "dur": 1635, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{}
+
+],
+"meta_datetime": "06/07/2023 04:20:02",
+"meta_command_line": "\"D:\\Program Files\\Unity\\Hub\\Editor\\2021.3.26f1\\Editor\\Unity.exe\" -projectpath \"D:\\Users\\lucas\\Desenvolvimento de Jogos\\Unity 3D\\Usable Assets\\Me Asset\\Language\" -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-lucas -hubSessionId 473ef842-7bbb-4f92-bf73-40b3fe99900a -accessToken 11EHN2DNK1wb5f65W3N3ncG1xtmPBX0pFrf7SCE-r98004f",
+"meta_command_line_args": "D:\\Program Files\\Unity\\Hub\\Editor\\2021.3.26f1\\Editor\\Unity.exe -projectpath D:\\Users\\lucas\\Desenvolvimento de Jogos\\Unity 3D\\Usable Assets\\Me Asset\\Language -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-lucas -hubSessionId 473ef842-7bbb-4f92-bf73-40b3fe99900a -accessToken 11EHN2DNK1wb5f65W3N3ncG1xtmPBX0pFrf7SCE-r98004f",
+"meta_user_name": "lucas",
+"meta_os_version": "Microsoft Windows NT 10.0.19044.0",
+"meta_cpu_count": "8"
+}
