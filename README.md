@@ -13,4 +13,4 @@ You can find more information on how to use it on the YouTube Playlist: [Click H
 
 If you have suggestions for improvements and bug fixes, please share them with me so we can improve this package as much as possible.
 
-Current version in Git v0.2
+Current version in Git v0.1
