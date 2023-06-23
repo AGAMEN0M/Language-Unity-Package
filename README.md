@@ -12,3 +12,5 @@ This tool is compatible with TextMeshPro.
 You can find more information on how to use it on the YouTube Playlist: [Click Here.](https://www.youtube.com/playlist?list=PL5hnfx09yM4JkAyxrZWaFjhO3NMWxP_1F)
 
 If you have suggestions for improvements and bug fixes, please share them with me so we can improve this package as much as possible.
+
+Current version in Git v0.2
