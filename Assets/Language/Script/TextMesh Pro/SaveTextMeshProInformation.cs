@@ -1,10 +1,10 @@
 using UnityEngine;
-//using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEditor.SceneManagement;
 #endif
 
 public class SaveTextMeshProInformation : MonoBehaviour
@@ -39,6 +39,7 @@ public class SaveTextMeshProInformation : MonoBehaviour
                 EditorApplication.ExecuteMenuItem("Window/Language/Language Save Editor"); // Opens the Language Save Editor.
                 script.StartSava(); // Calls SaveLegacyInformation's StartSava() method.
                 AddLanguageSaveID(); // Adds the saved ID to the LanguageSaveEditorWindow.
+                EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene()); // Indicate that the scene has been modified.
             }
 
             // Shows the field to select the save type.

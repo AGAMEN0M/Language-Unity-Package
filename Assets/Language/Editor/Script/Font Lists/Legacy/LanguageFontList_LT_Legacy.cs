@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public static class LanguageFontList_LT_Legacy
 {
@@ -34,5 +35,8 @@ public static class LanguageFontList_LT_Legacy
 
         // Rename the new game object.
         newGameObject.name = "LanguageFontList (LT Legacy)";
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }

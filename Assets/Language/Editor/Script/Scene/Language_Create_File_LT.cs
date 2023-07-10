@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public static class Language_Create_File_LT
 {
@@ -37,5 +38,8 @@ public static class Language_Create_File_LT
 
         // Unpacks the created prefab.
         PrefabUtility.UnpackPrefabInstance(newGameObject, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }

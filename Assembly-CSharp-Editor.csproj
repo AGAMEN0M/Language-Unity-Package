@@ -56,25 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_InputField_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_Text_LT_Legacy.cs" />
     <Compile Include="Assets\Language\Editor\Script\Screens\Legacy\MeuEditorAddComponent.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_Language_Dropdown_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_Language_Dropdown_LT_Legacy.cs" />
     <Compile Include="Assets\Language\Editor\Script\Font Lists\TextMesh Pro\LanguageFontList_LT.cs" />
     <Compile Include="Assets\Language\Editor\Script\Font Lists\Legacy\LanguageFontList_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_Toggle_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_Dropdown_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_Button_LT_Legacy.cs" />
     <Compile Include="Assets\Language\Editor\Script\Scene\Language_Create_File_LT.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Scene\TextMesh Pro\TextMeshProCanvas_NewText_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_Text_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_InputField_LT_Legacy.cs" />
+    <Compile Include="Assets\Language\Editor\Script\Scene\TextMesh Pro\TextMeshProCanvas_NewText_LT.cs" />
     <Compile Include="Assets\Language\Editor\Script\Screens\TextMesh Pro\MeuEditorAddComponentTextMeshPro.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_Dropdown_LT_Legacy.cs" />
     <Compile Include="Assets\Language\Editor\Script\Scene\Legacy\Canvas_NewText_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_Button_LT_Legacy.cs" />
-    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshProCanvas_Toggle_LT_Legacy.cs" />
+    <Compile Include="Assets\Language\Editor\Script\Canvas\Legacy\Canvas_LT_Legacy.cs" />
+    <Compile Include="Assets\Language\Editor\Script\Canvas\TextMesh Pro\TextMeshPro_Canvas_LT.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Language\Editor\Test File.txt" />

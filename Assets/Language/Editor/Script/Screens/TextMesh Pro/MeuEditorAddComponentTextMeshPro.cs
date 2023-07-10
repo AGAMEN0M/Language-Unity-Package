@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
             // Loop through selected game objects and add LanguageDropdownOptionsTextMeshPro component to each one.
             obj.AddComponent<LanguageDropdownOptionsTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add LanguageDropdownTextMeshPro component to selected game objects.
@@ -29,6 +33,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<LanguageDropdownTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add LanguageFontListTextMeshPro component to selected game objects.
@@ -43,6 +50,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<LanguageFontListTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add LanguageTextInputFieldTextMeshPro component to selected game objects.
@@ -57,6 +67,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<LanguageTextInputFieldTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add LanguageTextMeshTextMeshPro component to selected game objects.
@@ -71,6 +84,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<LanguageTextMeshTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add LanguageTextTextMeshPro component to selected game objects.
@@ -85,6 +101,9 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<LanguageTextTextMeshPro>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Menu item to add SaveLegacyInformationTextMeshPro component to selected game objects.
@@ -99,5 +118,8 @@ public class MeuEditorAddComponentTextMeshPro : MonoBehaviour
         {
             obj.AddComponent<SaveTextMeshProInformation>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }

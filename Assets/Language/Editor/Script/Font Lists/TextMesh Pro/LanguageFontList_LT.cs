@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public static class LanguageFontList_LT
 {
-    [MenuItem("GameObject/Language/Font Lists/LanguageFontList (LT)")]
+    [MenuItem("GameObject/Language/Font Lists/LanguageFontList (LT TMP)")]
     public static void Create(MenuCommand menuCommand)
     {
         // Manually added prefab path.
-        string prefabPath = "Assets/Language/Prefab/TextMesh Pro/LanguageFontList (LT).prefab";
+        string prefabPath = "Assets/Language/Prefab/TextMesh Pro/LanguageFontList (LT TMP).prefab";
 
         // Load prefab from specified path.
         GameObject originalPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
@@ -33,6 +34,9 @@ public static class LanguageFontList_LT
         }
 
         // Rename the new game object.
-        newGameObject.name = "LanguageFontList (LT)";
+        newGameObject.name = "LanguageFontList (LT TMP)";
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }

@@ -1,0 +1,101 @@
+Linguagem - [PORTUGUÊS BR]
+Portuguese (Brazil)
+id:-11;{Alternar} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-10;{Teste de Idioma}
+id:-9;{Olá Mundo} S:0; Font:0; Rev:0;
+id:-8;{Novo Texto} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-7; S:0; Font:0; Ali:0; Rev:0;
+id:-6;{Digite o texto...} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:-5; Font:0; Ali:0; Rev:0;
+id:-4;{Opção C}
+id:-3;{Opção B}
+id:-2;{Opção A}
+id:-1;{Botão} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:0;{Sem ID de idioma} S:0; X:0; Y:0; Width:0; Height:0; Font:0; Ali:0; Rev:0;
+id:1; {Jogar} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:2; {Tela Cheia} S:14; X:0; Y:0; Width:0; Height:0; Font:1; Ali:1; Rev:0;
+id:3; {Resolução da Tela} S:18; X:-264; Y:-5; Width:160; Height:23; Font:1; Ali:1; Rev:0;
+id:4; {Todos os Sons} S:18; X:150; Y:25,6; Width:160; Height:23; Font:1; Ali:1; Rev:0;
+id:5; {Efeitos} S:18; X:150; Y:-26; Width:160; Height:23; Font:1; Ali:1; Rev:0;
+id:6; {Músicas} S:18; X:150; Y:-78; Width:160; Height:23; Font:1; Ali:1; Rev:0;
+id:7; {Voltar} S:24; X:0; Y:0; Width:110; Height:30; Font:1; Ali:2; Rev:0;
+id:8; {Configurações} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:9; {Sair} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:10; {Sim} S:24; X:0; Y:0; Width:100; Height:30; Font:1; Ali:2; Rev:0;
+id:11; {Não} S:24; X:0; Y:0; Width:100; Height:30; Font:1; Ali:2; Rev:0;
+id:12; {Tem certeza?} S:36; X:3; Y:50; Width:365; Height:150; Font:1; Ali:2; Rev:0;
+id:13; {Continuar} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:14; {Configurações} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:15; {Sair} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:16; {A desigualdade é uma realidade persistente que permeou muitos mundos e sociedades por muito tempo. -->} S:8; Font:7; Rev:0;
+id:17; {Manifesta-se de diversas formas, seja pela disparidade de renda, acesso desigual à educação e saúde, oportunidades limitadas e discriminação sistemática.} S:7; Font:7; Rev:0;
+id:18; {A desigualdade é um obstáculo significativo ao desenvolvimento humano e social, afetando negativamente a vida de milhões de pessoas em todo o mundo.} S:7; Font:7; Rev:0;
+id:19; {Uma das formas mais óbvias de desigualdade é a desigualdade econômica.} S:9; Font:7; Rev:0;
+id:20; {Enquanto alguns indivíduos desfrutam de riqueza e prosperidade, outros lutam para atender às suas necessidades básicas.} S:7; Font:7; Rev:0;
+id:21; {A concentração de recursos e poder nas mãos de poucos cria um ciclo vicioso em que os privilegiados têm mais oportunidades de sucesso, enquanto os menos favorecidos têm dificuldade em romper com as limitações impostas pela falta de recursos.} S:5; Font:7; Rev:0;
+id:22; {A desigualdade também se manifesta de forma flagrante na educação.} S:9; Font:7; Rev:0;
+id:23; {O acesso à educação de qualidade pode determinar o curso de vida de uma pessoa.} S:10; Font:7; Rev:0;
+id:24; {Infelizmente, muitos sistemas educacionais em todo o mundo perpetuam a desigualdade ao oferecer recursos limitados e oportunidades desiguais para diferentes grupos socioeconômicos.} S:6; Font:7; Rev:0;
+id:25; {Além disso, a desigualdade social também está intrinsecamente ligada a questões de gênero, raça, etnia e origem socioeconômica.} S:8; Font:7; Rev:0;
+id:26; {As minorias étnicas e raciais, as mulheres e os grupos marginalizados enfrentam barreiras sistemáticas que dificultam seu acesso a oportunidades e recursos.} S:6; Font:7; Rev:0;
+id:27; {A desigualdade não é apenas uma questão moral, mas também um desafio econômico e social.} S:8; Font:7; Rev:0;
+id:28; {Estudos mostram que sociedades mais igualitárias tendem a ser mais estáveis, com menos crimes e melhor saúde geral.} S:8; Font:7; Rev:0;
+id:29; {A desigualdade extrema, por outro lado, pode gerar tensões sociais, criar grandes disparidades e minar a coesão social.} S:8; Font:7; Rev:0;
+id:30; {Combater a desigualdade requer uma abordagem abrangente e colaborativa.} S:9; Font:7; Rev:0;
+id:31; {É fundamental implementar políticas que promovam a igualdade de oportunidades, como investimentos em educação acessível e de qualidade, programas de inclusão social, acesso equitativo a serviços básicos e medidas de combate à discriminação e ao preconceito.} S:5; Font:7; Rev:0;
+id:32; {Além disso, é preciso promover um diálogo aberto e construtivo, estimulando a conscientização e a mudança de mentalidade em relação à desigualdade.} S:7; Font:7; Rev:0;
+id:33; {Fazer uma sociedade mais justa e igualitária é um desafio complexo, mas um objetivo fundamental que vale a pena perseguir.} S:8; Font:7; Rev:0;
+id:34; {Somente enfrentando a desigualdade de frente e trabalhando juntos para superá-la é que eles podem criar um futuro em que todos tenham oportunidades justas para atingir todo o seu potencial e desfrutar de uma vida digna. Pelo menos é o que eu acho.   Fim...} S:5; Font:7; Rev:0;
+id:35; {Tempo:} S:18; X:0; Y:0; Width:60; Height:25; Font:1; Ali:1; Rev:0;
+id:36; {O Tempo Passa:} S:15; X:0; Y:0; Width:120; Height:25; Font:1; Ali:1; Rev:0;
+id:37; {Desabilitado} 
+id:38; {Habilitar} 
+id:39; {Tempo por Velocidade} 
+id:40; {Tempo por Tempo} 
+id:41; Font:1; Ali:1; Rev:0;
+id:42; {Inverter o Tempo} S:14; X:0; Y:0; Width:0; Height:0; Font:1; Ali:1; Rev:0;
+id:43; {Velocidade do Tempo:} S:12; X:60; Y:-50; Width:120; Height:25; Font:1; Ali:1; Rev:0;
+id:44; {Velocidade...} S:14; X:0; Y:0; Width:0; Height:0; Font:1; Ali:1; Rev:0;
+id:45; S:14; Font:1; Ali:1; Rev:0;
+id:46; {Duração...} S:14; X:0; Y:0; Width:0; Height:0; Font:1; Ali:1; Rev:0;
+id:47; S:14; Font:1; Ali:1; Rev:0;
+id:48; {Tempo por Dia:} S:17; X:0; Y:0; Width:120; Height:25; Font:1; Ali:1; Rev:0;
+id:49; {Voltar} S:24; X:0; Y:0; Width:100; Height:30; Font:1; Ali:2; Rev:0;
+id:50; {Quer mudar o tempo?} S:36; X:0; Y:150; Width:500; Height:50; Font:7; Ali:2; Rev:0;
+id:51; {Você não deveria estar aqui...} S:5; Font:7; Rev:0;
+id:52; {Bem... Nem eu deveria} S:5; Font:7; Rev:0;
+id:53; {Menu} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:54; {Créditos} S:24; X:0; Y:0; Width:160; Height:30; Font:1; Ali:2; Rev:0;
+id:56; {Voltar} S:24; X:0; Y:0; Width:110; Height:30; Font:1; Ali:2; Rev:0;
+id:57; {Desenvolvedor do Jogo} S:25; X:8,50001; Y:253,3097; Width:300; Height:50; Font:1; Ali:2; Rev:0;
+id:58; {Lucas/AGAMENOM} S:25; X:8,50001; Y:216,3097; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:59; {Modelos 3D} S:25; X:8,50001; Y:163,3097; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:60; {Lucas/AGAMENOM} S:25; X:8,50001; Y:125,3097; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:61; {The Girl - The Girl Cs exe} S:25; X:8,50001; Y:86,30969; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:62; {Sons e Música} S:25; X:8,50001; Y:30,30969; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:63; {Cassio Toledo} S:25; X:8,50001; Y:-6,690247; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:64; {Sound Effects} S:25; X:8,50001; Y:-42,69025; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:65; {SÓ SOM} S:25; X:8,50001; Y:-79,69028; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:66; {Fonte} S:25; X:8,50001; Y:-134,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:67; {Algerian Regular - maisfontes} S:25; X:8,50001; Y:-173,6902; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:68; {Ativos} S:25; X:8,50001; Y:-226,6904; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:69; {MMD4Mecanim} S:25; X:8,50001; Y:-264,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:70; {TextMesh Pro} S:25; X:8,50001; Y:-300,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:71; {A.U.R.W Free URP version} S:25; X:8,50001; Y:-338,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:72; {Shaders} S:25; X:8,50001; Y:-391,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:73; {Procedural Skybox} S:25; X:8,50001; Y:-429,6903; Width:700; Height:50; Font:1; Ali:2; Rev:0;
+id:74; {Se quiser pode ver alguns pensamentos meus logo a frente} S:5; Font:7; Rev:0;
+id:75; {Coletáveis} S:36; X:233; Y:176; Width:200; Height:50; Font:1; Ali:2; Rev:0;
+id:76; {Paradoxical Time Refração} S:40; X:0; Y:140; Width:400; Height:100; Font:7; Ali:2; Rev:0;
+[Text:0; {Itens padrão do Unity} ids:0;-1;-2;-3;-4;-5;-6;-7;-8;-9;-10;-11;]
+[Text:1; {Menu Iniciar} ids:1;8;9;54;]
+[Text:2; {Menu de configurações} ids:2;3;4;5;6;7;]
+[Text:3; {Menu Sair} ids:10;11;]
+[Text:4; {Menu no jogo} ids:13;14;15;53;75;]
+[Text:5; {Textos em cena} ids:16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;]
+[Text:6; {Controlador Sky} ids:35;36;37;38;39;40;41;42;43;44;45;46;47;48;49;50;]
+[Text:7; {The Girl Texto} ids:51;52;74;]
+[Text:8; {Créditos} ids:56;57;58;59;60;61;62;63;64;65;66;67;68;69;70;71;72;73;]
+[Comments:0; {Se um id não foi definido, ele mostrará esta mensagem.}]
+[Comments:1; {Comece o jogo}]
+[Comments:76; {Game Title}]

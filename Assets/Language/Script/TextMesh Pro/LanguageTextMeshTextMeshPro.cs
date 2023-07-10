@@ -26,11 +26,13 @@ public class LanguageTextMeshTextMeshPro : MonoBehaviour
     [SerializeField] private string defaultFile; // Default file for language if no selection.
     [Space(10)]
     [Header("Archives Location")]
+    #pragma warning disable CS0414
     [SerializeField] private string jsonNameInUnity = "/Language/Editor/LanguageFileSave.json"; // JSON file name in Unity.
     [SerializeField] private string FolderNameInUnity = "/StreamingAssets/Language/"; // Folder name in Unity.
     [Space(10)]
     [SerializeField] private string jsonNameInBuild = "/LanguageFileSave.json"; // JSON file name in build.
     [SerializeField] private string FolderNameInBuild = "/StreamingAssets/Language/"; // Folder name in build.
+    #pragma warning restore CS0414
 
     private void Start()
     {

@@ -21,6 +21,7 @@ public class LanguageDropdownTextMeshPro : MonoBehaviour
     [SerializeField] private string fileSavePath; // Selected file for the language of the other scripts.
     [Space(10)]
     [Header("Archives Location")]
+    #pragma warning disable CS0414
     [SerializeField] private string jsonNameInUnity = "/Language/Editor/LanguageFileSave.json"; // JSON file name in Unity.
     [SerializeField] private string jsonSaveNameInUnity = "/Language/Editor/LanguageSave.json"; // JSON file name in Unity.
     [SerializeField] private string FolderNameInUnity = "/StreamingAssets/Language/"; // Folder name in Unity.
@@ -28,6 +29,7 @@ public class LanguageDropdownTextMeshPro : MonoBehaviour
     [SerializeField] private string jsonNameInBuild = "/LanguageFileSave.json"; // JSON file name in build.
     [SerializeField] private string jsonSaveNameInBuild = "/LanguageSave.json"; // JSON file name in build.
     [SerializeField] private string FolderNameInBuild = "/StreamingAssets/Language/"; // Folder name in build.
+    #pragma warning restore CS0414
 
     private void Start()
     {

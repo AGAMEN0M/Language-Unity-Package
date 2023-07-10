@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public class MeuEditorAddComponent : EditorWindow
 {
@@ -13,6 +14,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<SaveLegacyInformation>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add the "Language Create File" component to the selected objects.
@@ -25,6 +29,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageCreateFile>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add the "Language Script" component to the selected objects.
@@ -37,6 +44,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent< LanguageScript> ();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add the "Language Text Mesh" component to the selected objects.
@@ -49,6 +59,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageTextMesh>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add the "Language Text Input Field" component to the selected objects.
@@ -61,6 +74,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageTextInputField>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add the "Language Text" component to the selected objects.
@@ -73,6 +89,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageText>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Adds the "LanguageFontList" component to selected objects.
@@ -85,6 +104,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageFontList>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Adds the "LanguageDropdownOptions" component to selected objects.
@@ -97,6 +119,9 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageDropdownOptions>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 
     // Add "Language Dropdown" component to selected objects.
@@ -109,5 +134,8 @@ public class MeuEditorAddComponent : EditorWindow
         {
             obj.AddComponent<LanguageDropdownOptions>();
         }
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }

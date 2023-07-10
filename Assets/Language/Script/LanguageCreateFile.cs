@@ -16,6 +16,7 @@ public class LanguageCreateFile : MonoBehaviour
     [SerializeField] private string defaultFile; // Default file for language if no selection.
     [Space(10)]
     [Header("Archives Location")]
+    #pragma warning disable CS0414
     [SerializeField] private string jsonNameInUnity = "/Language/Editor/LanguageFileSave.json"; // JSON file name in Unity.
     [SerializeField] private string FolderNameInUnity = "/StreamingAssets/Language/"; // Folder name in Unity.
     [Space(10)]
@@ -26,6 +27,7 @@ public class LanguageCreateFile : MonoBehaviour
     [Header("File Creator Settings")]
     [SerializeField] private string folderNameInUnity = "Editor/Files";
     [SerializeField] private string folderNameInBuild = "Files";
+    #pragma warning restore CS0414
     [Space(10)]
     [SerializeField] private string FileName = "Test File";
     [SerializeField] private string FileExtension = ".txt";

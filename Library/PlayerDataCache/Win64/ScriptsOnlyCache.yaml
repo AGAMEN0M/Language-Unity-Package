@@ -1,10 +1,13 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AddComments
+    - AddGroup
+    - ButtonInteraction
     - ButtonsLanguageScriptTest
     - ButtonsMiddleCenter
     - ButtonsOpenFile
-    - CreatePrefabChild
+    - CheckParentAndDestroy
     - DeleteObject
     - DropdownActivatObject
     - DualScreen
@@ -27,6 +30,7 @@ ScriptsOnlyBuild:
     - LanguageTextTextMeshPro
     - LoadFile
     - NumericInputField
+    - ObjectCheck
     - OpenLanguageFolder
     - OrganizeCommentsIDS
     - OrganizeIDGroups
@@ -159,6 +163,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonLeftBottom
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: LoadFile
     methodName: Load
@@ -180,6 +187,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: UpdateOrganize
     methodName: UpdateOrganization
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: AddComments
+    methodName: CreatePrefab
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonStretch2Center
@@ -195,15 +208,30 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: DualScreen
     methodName: ChangeCanvas
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonRightMiddle
-  - assembly: Assembly-CSharp
-    fullTypeName: CreatePrefabChild
-    methodName: CreatePrefab
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.InputField
+    methodName: set_text
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.InputField
+    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonBottomStretch1
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: AddGroup
+    methodName: CreatePrefab
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonTopStretch1
@@ -216,9 +244,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: OpenLanguageFolder
     methodName: openFolder
-  - assembly: Assembly-CSharp
-    fullTypeName: CreatePrefabChild
-    methodName: CreatePrefab
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.InputField
+    methodName: set_text
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.InputField
+    methodName: set_text
+  - assembly: UnityEngine.UI
+    fullTypeName: UnityEngine.UI.InputField
+    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: ButtonsMiddleCenter
     methodName: ButtonLeftTop
@@ -275,69 +312,69 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16210}
     - Class: 114
-      Script: {instanceID: 16654}
+      Script: {instanceID: 16656}
     - Class: 114
-      Script: {instanceID: 16990}
+      Script: {instanceID: 16992}
     - Class: 114
-      Script: {instanceID: 17080}
+      Script: {instanceID: 17082}
     - Class: 114
-      Script: {instanceID: 17086}
+      Script: {instanceID: 17088}
     - Class: 114
-      Script: {instanceID: 17186}
+      Script: {instanceID: 17188}
     - Class: 114
-      Script: {instanceID: 17288}
+      Script: {instanceID: 17290}
     - Class: 114
-      Script: {instanceID: 17334}
+      Script: {instanceID: 17336}
     - Class: 114
-      Script: {instanceID: 17422}
+      Script: {instanceID: 17424}
     - Class: 114
-      Script: {instanceID: 17442}
+      Script: {instanceID: 17444}
     - Class: 114
-      Script: {instanceID: 17458}
+      Script: {instanceID: 17460}
     - Class: 114
-      Script: {instanceID: 17976}
+      Script: {instanceID: 17978}
     - Class: 114
-      Script: {instanceID: 18008}
+      Script: {instanceID: 18010}
     - Class: 114
-      Script: {instanceID: 18028}
+      Script: {instanceID: 18030}
     - Class: 114
-      Script: {instanceID: 18158}
+      Script: {instanceID: 18160}
     - Class: 114
-      Script: {instanceID: 18352}
+      Script: {instanceID: 18354}
     - Class: 114
-      Script: {instanceID: 18406}
+      Script: {instanceID: 18408}
     - Class: 114
-      Script: {instanceID: 18570}
+      Script: {instanceID: 18572}
     - Class: 114
-      Script: {instanceID: 19006}
+      Script: {instanceID: 19008}
     - Class: 114
-      Script: {instanceID: 19036}
+      Script: {instanceID: 19038}
     - Class: 114
-      Script: {instanceID: 19350}
+      Script: {instanceID: 19352}
     - Class: 114
-      Script: {instanceID: 19406}
+      Script: {instanceID: 19408}
     - Class: 114
-      Script: {instanceID: 19510}
+      Script: {instanceID: 19514}
     - Class: 114
-      Script: {instanceID: 19526}
+      Script: {instanceID: 19530}
     - Class: 114
-      Script: {instanceID: 19770}
+      Script: {instanceID: 19774}
     - Class: 114
-      Script: {instanceID: 20066}
+      Script: {instanceID: 20070}
     - Class: 114
-      Script: {instanceID: 20212}
+      Script: {instanceID: 20216}
     - Class: 114
-      Script: {instanceID: 20524}
+      Script: {instanceID: 20528}
     - Class: 114
-      Script: {instanceID: 20532}
+      Script: {instanceID: 20536}
     - Class: 114
-      Script: {instanceID: 21048}
+      Script: {instanceID: 21050}
     - Class: 114
-      Script: {instanceID: 21148}
+      Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21830}
+      Script: {instanceID: 21834}
     - Class: 114
-      Script: {instanceID: 21910}
+      Script: {instanceID: 21914}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -390,83 +427,91 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16252}
     - Class: 114
-      Script: {instanceID: 16438}
+      Script: {instanceID: 16316}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16440}
     - Class: 114
-      Script: {instanceID: 17080}
+      Script: {instanceID: 16672}
     - Class: 114
-      Script: {instanceID: 17086}
+      Script: {instanceID: 17082}
     - Class: 114
-      Script: {instanceID: 17154}
+      Script: {instanceID: 17088}
     - Class: 114
-      Script: {instanceID: 17288}
+      Script: {instanceID: 17156}
     - Class: 114
-      Script: {instanceID: 17334}
+      Script: {instanceID: 17290}
     - Class: 114
-      Script: {instanceID: 17530}
+      Script: {instanceID: 17336}
     - Class: 114
-      Script: {instanceID: 17748}
+      Script: {instanceID: 17532}
     - Class: 114
-      Script: {instanceID: 17918}
+      Script: {instanceID: 17750}
     - Class: 114
-      Script: {instanceID: 18086}
+      Script: {instanceID: 17920}
     - Class: 114
-      Script: {instanceID: 18352}
+      Script: {instanceID: 18088}
     - Class: 114
-      Script: {instanceID: 18570}
+      Script: {instanceID: 18354}
     - Class: 114
-      Script: {instanceID: 18584}
+      Script: {instanceID: 18572}
     - Class: 114
-      Script: {instanceID: 18680}
+      Script: {instanceID: 18586}
     - Class: 114
-      Script: {instanceID: 18836}
+      Script: {instanceID: 18682}
     - Class: 114
-      Script: {instanceID: 19006}
+      Script: {instanceID: 18838}
     - Class: 114
-      Script: {instanceID: 19220}
+      Script: {instanceID: 19008}
     - Class: 114
-      Script: {instanceID: 19350}
+      Script: {instanceID: 19222}
     - Class: 114
-      Script: {instanceID: 19406}
+      Script: {instanceID: 19352}
     - Class: 114
-      Script: {instanceID: 19462}
+      Script: {instanceID: 19408}
     - Class: 114
-      Script: {instanceID: 19526}
+      Script: {instanceID: 19426}
     - Class: 114
-      Script: {instanceID: 19770}
+      Script: {instanceID: 19466}
     - Class: 114
-      Script: {instanceID: 19778}
+      Script: {instanceID: 19530}
     - Class: 114
-      Script: {instanceID: 20066}
+      Script: {instanceID: 19774}
     - Class: 114
-      Script: {instanceID: 20212}
+      Script: {instanceID: 19782}
+    - Class: 114
+      Script: {instanceID: 20070}
     - Class: 114
       Script: {instanceID: 20216}
     - Class: 114
-      Script: {instanceID: 20422}
+      Script: {instanceID: 20220}
     - Class: 114
-      Script: {instanceID: 20524}
+      Script: {instanceID: 20426}
     - Class: 114
-      Script: {instanceID: 20532}
+      Script: {instanceID: 20528}
     - Class: 114
-      Script: {instanceID: 20566}
+      Script: {instanceID: 20536}
     - Class: 114
-      Script: {instanceID: 20790}
+      Script: {instanceID: 20792}
     - Class: 114
-      Script: {instanceID: 20834}
+      Script: {instanceID: 20836}
     - Class: 114
-      Script: {instanceID: 20930}
+      Script: {instanceID: 20932}
     - Class: 114
-      Script: {instanceID: 21148}
+      Script: {instanceID: 21150}
     - Class: 114
-      Script: {instanceID: 21266}
+      Script: {instanceID: 21168}
     - Class: 114
-      Script: {instanceID: 21268}
+      Script: {instanceID: 21270}
     - Class: 114
-      Script: {instanceID: 21536}
+      Script: {instanceID: 21272}
     - Class: 114
-      Script: {instanceID: 22118}
+      Script: {instanceID: 21540}
+    - Class: 114
+      Script: {instanceID: 22122}
+    - Class: 114
+      Script: {instanceID: 48724}
+    - Class: 114
+      Script: {instanceID: 68782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -568,6 +613,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionStayMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8e658531d9608fcb62421a56e1128bc5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddGroup
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1080,6 +1131,12 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: 83a4fc3e696432dec7dcf15c05489b9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CheckParentAndDestroy
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1224,12 +1281,6 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: 85ae2ce13d9e39849b23edec00a01709
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CreatePrefabChild
-  - hash:
-      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -1248,7 +1299,7 @@ ScriptsOnlyBuild:
     className: OrganizeCommentsIDS
   - hash:
       serializedVersion: 2
-      Hash: 7be60d5807afffd80f1ab3ebe80aff40
+      Hash: e778317978e1e12efab055ea37e170b2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OrganizeIDS
@@ -1296,12 +1347,6 @@ ScriptsOnlyBuild:
     className: LanguageDropdownOptionsTextMeshPro
   - hash:
       serializedVersion: 2
-      Hash: c08966f4aabf8114142bb198b157d8b0
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LanguageIndicator
-  - hash:
-      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1336,6 +1381,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c3bee85186e01d01f66865785372f920
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AddComments
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1486,8 +1537,21 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 8bc6a06872b319b0eeb3f11bd8f58829
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObjectCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 464be8b60be38f6c4f53ddc2a013dcce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonInteraction
   platform: 19
   scenePathNames:
   - Assets/Language Editor/Scenes/Language Editor.unity
   - Assets/Language Editor/Scenes/Language Component Testing.unity
-  playerPath: D:/FFOutput/LanguageEditor/LanguageEditor.exe
+  playerPath: D:/Users/lucas/Desenvolvimento de Jogos/Unity 3D/Assets Paradoxical
+    Time/Under Development/Language/Language Editor/LanguageEditor.exe

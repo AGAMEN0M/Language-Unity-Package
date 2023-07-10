@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.SceneManagement;
 
 public static class New_Text_LT_Legacy
 {
-    [MenuItem("GameObject/Language/Scene/Legacy/New Text (LT)")]
+    [MenuItem("GameObject/Language/Scene/Legacy/New Text (LT Legacy)")]
     public static void Create(MenuCommand menuCommand)
     {
         // Manually added prefab path.
-        string prefabPath = "Assets/Language/Prefab/Legacy/Scene/New Text (LT).prefab";
+        string prefabPath = "Assets/Language/Prefab/Legacy/Scene/New Text (LT Legacy).prefab";
 
         // Load prefab from specified path.
         GameObject originalPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(prefabPath);
@@ -33,9 +34,12 @@ public static class New_Text_LT_Legacy
         }
 
         // Rename the new game object.
-        newGameObject.name = "New Text (LT)";
+        newGameObject.name = "New Text (LT Legacy)";
 
         // Unpacks the created prefab.
         PrefabUtility.UnpackPrefabInstance(newGameObject, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+
+        // Indicate that the scene has been modified.
+        EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
     }
 }
