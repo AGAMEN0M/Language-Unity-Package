@@ -97,6 +97,7 @@
     <Compile Include="Assets\Language\Script\TextMesh Pro\LanguageDropdownTextMeshPro.cs" />
     <Compile Include="Assets\Language\Script\TextMesh Pro\LanguageTextMeshTextMeshPro.cs" />
     <Compile Include="Assets\Language Editor\Script\Canvas\Edit Menu\Tools\Save &amp; Load\SaveFile.cs" />
+    <Compile Include="Assets\Language\Script\Screens\LanguageSettingsWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -289,16 +289,6 @@ public class SaveTextMeshProInformation : MonoBehaviour
     [SerializeField] private GameObject DDisplayText; // Dropdown text component.
     [SerializeField] private LanguageFontListTextMeshPro FontListTMPro; // List of used fonts.
     [Space(10)]
-    [Header("LanguageCreateFile Settings")]
-    [SerializeField] private List<SaveLegacyLanguageTextMeshPro> language; // List of all information.
-    [SerializeField] private bool CFTestWrite; // Recording test.
-    [Space(10)]
-    [Header("LanguageScript Settings")]
-    [SerializeField] private float SID; // Script ID.
-    [SerializeField] private bool STestWrite; // Recording test.
-    [TextArea(5, 10)]
-    [SerializeField] private string STest = "Write the Text Here..."; // Test text.
-    [Space(10)]
     [Header("LanguageDropdownOptions Settings")]
     [SerializeField] private List<SaveLegacyLanguageSelectedTextMeshPro> languageSelected; // List of all information.
     [SerializeField] private float dID; // Text ID.

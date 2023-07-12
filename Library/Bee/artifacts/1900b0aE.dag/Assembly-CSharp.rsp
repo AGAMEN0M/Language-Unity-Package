@@ -381,6 +381,7 @@
 "Assets/Language/Script/Legacy/LanguageTextMesh.cs"
 "Assets/Language/Script/Legacy/SaveLegacyInformation.cs"
 "Assets/Language/Script/Screens/LanguageSaveEditorWindow.cs"
+"Assets/Language/Script/Screens/LanguageSettingsWindow.cs"
 "Assets/Language/Script/TextMesh Pro/LanguageDropdownOptionsTextMeshPro.cs"
 "Assets/Language/Script/TextMesh Pro/LanguageDropdownTextMeshPro.cs"
 "Assets/Language/Script/TextMesh Pro/LanguageFontListTextMeshPro.cs"
