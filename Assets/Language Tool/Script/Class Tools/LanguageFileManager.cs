@@ -22,9 +22,20 @@ namespace LanguageTools
     {
         #region === Cached Data & Constants ===
 
-        private static LanguageSettingsData cachedLanguageData = null; // Stores the loaded language settings.
-        private static readonly string CultureCodeKey = "SelectedCulture"; // Key for storing the culture code in PlayerPrefs.
-        private static string assetsPath = null; // Cached path to the folder containing language assets.
+        /// <summary>
+        /// Stores the loaded language settings.
+        /// </summary>
+        private static LanguageSettingsData cachedLanguageData = null;
+
+        /// <summary>
+        /// Key for storing the culture code in PlayerPrefs.
+        /// </summary>
+        private static readonly string CultureCodeKey = "SelectedCulture";
+
+        /// <summary>
+        /// Cached path to the folder containing language assets.
+        /// </summary>
+        private static string assetsPath = null;
 
         #endregion
 

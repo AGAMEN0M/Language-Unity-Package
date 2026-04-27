@@ -10,169 +10,171 @@
 
 using System.Collections.Generic;
 using UnityEngine.UI;
-using LanguageTools;
 using UnityEngine;
 
 using static LanguageTools.LanguageFileManager;
 
-/// <summary>
-/// Validates a Unity UI Text component's font against displayed text, replacing the font or fallback language name if necessary.
-/// </summary>
-[AddComponentMenu("Language/UI/Complements/Automatic Language Font Validator (Legacy)")]
-public class AutomaticLanguageFontValidator : MonoBehaviour
+namespace LanguageTools.Legacy
 {
-    #region === Serialized Fields ===
-
-    [Header("Target Text to Monitor")]
-    [SerializeField, Tooltip("Reference to the UI Text component to validate and update automatically.")]
-    private Text textComponent; // Target Text component to monitor and validate font characters for.
-
-    [Header("Enable language fallback name resolution")]
-    [SerializeField, Tooltip("Determines whether native language names can be replaced with fallback names if characters are unsupported.")]
-    private bool isLanguageManager; // Whether to allow replacing native names with fallback names based on supported languages.
-
-    #endregion
-
-    #region === Private Fields ===
-
-    private List<LanguageAvailable> supportedLanguages; // List of languages available from settings, used for fallback logic.
-    private LanguageSettingsData localizationSettings; // Loaded localization configuration data including font settings.
-    private string lastValidatedText; // Stores the last validated text to prevent redundant validation.
-
-    #endregion
-
-    #region === Properties ===
-
     /// <summary>
-    /// Gets or sets the target Text component monitored by this validator.
+    /// Validates a Unity UI Text component's font against displayed text, replacing the font or fallback language name if necessary.
     /// </summary>
-    public Text TextComponent
+    [AddComponentMenu("Tools/Language Tool/UI/Complements/Automatic Language Font Validator (Legacy)")]
+    public class AutomaticLanguageFontValidator : MonoBehaviour
     {
-        get => textComponent;
-        set => textComponent = value;
-    }
+        #region === Serialized Fields ===
 
-    /// <summary>
-    /// Gets or sets whether the validator should allow replacing native names with fallback names.
-    /// </summary>
-    public bool IsLanguageManager
-    {
-        get => isLanguageManager;
-        set => isLanguageManager = value;
-    }
+        [Header("Target Text to Monitor")]
+        [SerializeField, Tooltip("Reference to the UI Text component to validate and update automatically.")]
+        private Text textComponent;
 
-    #endregion
+        [Header("Enable language fallback name resolution")]
+        [SerializeField, Tooltip("Determines whether native language names can be replaced with fallback names if characters are unsupported.")]
+        private bool isLanguageManager;
 
-    #region === Unity Events ===
+        #endregion
 
-    /// <summary> Loads language settings and initializes the validator. </summary>
-    private void Start()
-    {
-        if (textComponent == null)
+        #region === Private Fields ===
+
+        private List<LanguageAvailable> supportedLanguages; // List of languages available from settings, used for fallback logic.
+        private LanguageSettingsData localizationSettings; // Loaded localization configuration data including font settings.
+        private string lastValidatedText; // Stores the last validated text to prevent redundant validation.
+
+        #endregion
+
+        #region === Properties ===
+
+        /// <summary>
+        /// Gets or sets the target Text component monitored by this validator.
+        /// </summary>
+        public Text TextComponent
         {
-            Debug.LogError("AutomaticLanguageFontValidator: TextComponent is not assigned.", this);
-            return;
+            get => textComponent;
+            set => textComponent = value;
         }
 
-        localizationSettings = LoadLanguageSettings();
-        if (localizationSettings == null)
+        /// <summary>
+        /// Gets or sets whether the validator should allow replacing native names with fallback names.
+        /// </summary>
+        public bool IsLanguageManager
         {
-            Debug.LogError("AutomaticLanguageFontValidator: Failed to load LanguageSettingsData.", this);
-            return;
+            get => isLanguageManager;
+            set => isLanguageManager = value;
         }
 
-        // Load available languages if fallback logic is enabled.
-        if (isLanguageManager)
+        #endregion
+
+        #region === Unity Events ===
+
+        /// <summary> Loads language settings and initializes the validator. </summary>
+        private void Start()
         {
-            supportedLanguages = localizationSettings.availableLanguages;
-        }
-
-        ValidateFontSupport(textComponent.text); // Perform an initial validation of the current text.
-    }
-
-    /// <summary>
-    /// Continuously checks for text changes and re-validates font support when needed.
-    /// </summary>
-    private void Update()
-    {
-        if (textComponent == null || localizationSettings == null) return;
-
-        // Use textComponent's internal string reference for comparison to avoid string allocation.
-        string currentText = textComponent.text;
-        if (!ReferenceEquals(currentText, lastValidatedText))
-        {
-            lastValidatedText = currentText;
-            ValidateFontSupport(currentText);
-        }
-    }
-
-    #endregion
-
-    #region === Font Validation ===
-
-    /// <summary>
-    /// Validates that the font supports all characters in the provided text.
-    /// Falls back to alternate fonts or language names as necessary.
-    /// </summary>
-    /// <param name="text">The text to validate.</param>
-    private void ValidateFontSupport(string text)
-    {
-        if (textComponent == null || localizationSettings == null || localizationSettings.fontListData == null)
-        {
-            Debug.LogWarning("AutomaticLanguageFontValidator: Missing textComponent or font list.", this);
-            return;
-        }
-
-        var currentFont = textComponent.font;
-        var fallbackFonts = localizationSettings.fontListData.fontList;
-
-        // Check if current font supports all characters.
-        bool isCurrentFontValid = true;
-        foreach (char c in text)
-        {
-            if (!currentFont.HasCharacter(c))
+            if (textComponent == null)
             {
-                isCurrentFontValid = false;
-                break;
+                Debug.LogError("AutomaticLanguageFontValidator: TextComponent is not assigned.", this);
+                return;
+            }
+
+            localizationSettings = LoadLanguageSettings();
+            if (localizationSettings == null)
+            {
+                Debug.LogError("AutomaticLanguageFontValidator: Failed to load LanguageSettingsData.", this);
+                return;
+            }
+
+            // Load available languages if fallback logic is enabled.
+            if (isLanguageManager)
+            {
+                supportedLanguages = localizationSettings.availableLanguages;
+            }
+
+            ValidateFontSupport(textComponent.text); // Perform an initial validation of the current text.
+        }
+
+        /// <summary>
+        /// Continuously checks for text changes and re-validates font support when needed.
+        /// </summary>
+        private void Update()
+        {
+            if (textComponent == null || localizationSettings == null) return;
+
+            // Use textComponent's internal string reference for comparison to avoid string allocation.
+            string currentText = textComponent.text;
+            if (!ReferenceEquals(currentText, lastValidatedText))
+            {
+                lastValidatedText = currentText;
+                ValidateFontSupport(currentText);
             }
         }
 
-        if (isCurrentFontValid) return; // Current font is valid, no need to change.
+        #endregion
 
-        // Try each fallback font to see if any supports all characters.
-        foreach (var fallbackFont in fallbackFonts)
+        #region === Font Validation ===
+
+        /// <summary>
+        /// Validates that the font supports all characters in the provided text.
+        /// Falls back to alternate fonts or language names as necessary.
+        /// </summary>
+        /// <param name="text">The text to validate.</param>
+        private void ValidateFontSupport(string text)
         {
-            if (fallbackFont == null) continue;
+            if (textComponent == null || localizationSettings == null || localizationSettings.fontListData == null)
+            {
+                Debug.LogWarning("AutomaticLanguageFontValidator: Missing textComponent or font list.", this);
+                return;
+            }
 
-            bool fontSupportsAll = true;
+            var currentFont = textComponent.font;
+            var fallbackFonts = localizationSettings.fontListData.fontList;
+
+            // Check if current font supports all characters.
+            bool isCurrentFontValid = true;
             foreach (char c in text)
             {
-                if (!fallbackFont.HasCharacter(c))
+                if (!currentFont.HasCharacter(c))
                 {
-                    fontSupportsAll = false;
+                    isCurrentFontValid = false;
                     break;
                 }
             }
 
-            if (fontSupportsAll)
+            if (isCurrentFontValid) return; // Current font is valid, no need to change.
+
+            // Try each fallback font to see if any supports all characters.
+            foreach (var fallbackFont in fallbackFonts)
             {
-                textComponent.font = fallbackFont;
-                Debug.LogWarning($"AutomaticLanguageFontValidator: Applied fallback font '{fallbackFont.name}'.", this);
-                return;
+                if (fallbackFont == null) continue;
+
+                bool fontSupportsAll = true;
+                foreach (char c in text)
+                {
+                    if (!fallbackFont.HasCharacter(c))
+                    {
+                        fontSupportsAll = false;
+                        break;
+                    }
+                }
+
+                if (fontSupportsAll)
+                {
+                    textComponent.font = fallbackFont;
+                    Debug.LogWarning($"AutomaticLanguageFontValidator: Applied fallback font '{fallbackFont.name}'.", this);
+                    return;
+                }
+            }
+
+            // If no font supports all characters, fallback to language name.
+            if (isLanguageManager)
+            {
+                var matchingLanguage = supportedLanguages.Find(lang => lang.nativeName == text);
+                if (matchingLanguage != null)
+                {
+                    textComponent.text = matchingLanguage.name;
+                    Debug.LogWarning($"AutomaticLanguageFontValidator: Unsupported characters detected. Replaced native name with fallback name: '{matchingLanguage.name}'.", this);
+                }
             }
         }
 
-        // If no font supports all characters, fallback to language name.
-        if (isLanguageManager)
-        {
-            var matchingLanguage = supportedLanguages.Find(lang => lang.nativeName == text);
-            if (matchingLanguage != null)
-            {
-                textComponent.text = matchingLanguage.name;
-                Debug.LogWarning($"AutomaticLanguageFontValidator: Unsupported characters detected. Replaced native name with fallback name: '{matchingLanguage.name}'.", this);
-            }
-        }
+        #endregion
     }
-
-    #endregion
 }

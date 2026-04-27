@@ -9,15 +9,14 @@
  * ---------------------------------------------------------------------------
 */
 
-using UnityEngine;
-using UnityEditor;
 using System.Linq;
+using UnityEditor;
+using UnityEngine;
 using System.IO;
-using System;
 
 using static TSVTools.TabTableUtility;
 
-namespace TSVTools
+namespace TSVTools.Editor
 {
     public class TSVEditorWindow : EditorWindow
     {
@@ -70,29 +69,43 @@ namespace TSVTools
         #region === Menu Item ===
 
         /// <summary>
-        /// Opens the TSV Editor window in Unity's Window menu.
+        /// Opens the TSV Editor window in Unity's Tools menu.
         /// Searches for a custom icon and sets the window title and icon.
         /// </summary>
-        [MenuItem("Window/TSV Editor Window", false, 2028)]
+        [MenuItem("Tools/TSV Editor Window")]
         public static void OpenTableEditorWindow()
         {
+            // Get or create an instance of the TSVEditorWindow window.
             var window = GetWindow<TSVEditorWindow>("TSV Editor");
-            string fileName = "TSVEditorWindow Icon";
-            Texture2D icon = null;
 
-            string[] guids = AssetDatabase.FindAssets($"{fileName} t:Texture2D");
-            foreach (string guid in guids)
+            // Search for folders named "Editor Resources" in the project.
+            var folderGuids = AssetDatabase.FindAssets("Editor Resources t:Folder");
+
+            foreach (var guid in folderGuids)
             {
-                string texturePath = AssetDatabase.GUIDToAssetPath(guid);
-                string fileNameWithoutExtension = Path.GetFileNameWithoutExtension(texturePath);
+                string folderPath = AssetDatabase.GUIDToAssetPath(guid);
 
-                if (fileNameWithoutExtension.Equals(fileName, StringComparison.OrdinalIgnoreCase))
+                // Ensure this is the correct path containing "TSV Tools".
+                if (!folderPath.Contains("TSV Tools")) continue;
+
+                // Find Texture2D assets inside this folder only.
+                var assetGuids = AssetDatabase.FindAssets("t:Texture2D", new[] { folderPath });
+
+                if (assetGuids.Length > 0)
                 {
-                    icon = AssetDatabase.LoadAssetAtPath<Texture2D>(texturePath);
+                    // Load the first texture found.
+                    string assetPath = AssetDatabase.GUIDToAssetPath(assetGuids[0]);
+                    var icon = AssetDatabase.LoadAssetAtPath<Texture2D>(assetPath);
+
+                    window.titleContent = new GUIContent("TSV Editor", icon);
+                    return;
                 }
             }
 
-            window.titleContent = new GUIContent("TSV Editor", icon);
+            // Fallback if nothing is found.
+            window.titleContent = new GUIContent("TSV Editor");
+
+            Debug.LogWarning("Could not find 'TSV Tools/Editor Resources' with a Texture2D inside.");
         }
 
         #endregion
@@ -187,7 +200,7 @@ namespace TSVTools
         /// </summary>
         private void RenderOpenFileButton()
         {
-            if (!GUILayout.Button("Open File")) return;
+            if (!GUILayout.Button(new GUIContent("Open File", "Opens a file dialog to select a TSV file and loads its content into the editor."))) return;
 
             string path = EditorUtility.OpenFilePanel("Select TSV File", Application.dataPath, "tsv");
             if (!string.IsNullOrEmpty(path))
@@ -207,7 +220,7 @@ namespace TSVTools
 
             // Highlight button if there are unsaved changes.
             GUI.backgroundColor = isDirty ? Color.yellow : Color.white;
-            if (GUILayout.Button(saveButtonText))
+            if (GUILayout.Button(new GUIContent(saveButtonText, "Saves the current table to a TSV file. Shows '*' when there are unsaved changes.")))
             {
                 string savePath = EditorUtility.SaveFilePanel("Save TSV File", Application.dataPath, "Table", "tsv");
                 if (!string.IsNullOrEmpty(savePath)) SaveTableToFile(savePath);
@@ -224,7 +237,7 @@ namespace TSVTools
             GUILayout.Label("You can move rows or add new ones by creating them twice.");
             GUILayout.Label("Remove Row/Column", EditorStyles.boldLabel);
 
-            int newIndexToRemove = EditorGUILayout.IntField("Number (index)", targetIndex);
+            int newIndexToRemove = EditorGUILayout.IntField(new GUIContent("Number (index)", "Index of the row or column to remove. Must be within valid table bounds."), targetIndex);
             if (newIndexToRemove < 0) newIndexToRemove = 0;
 
             if (newIndexToRemove != targetIndex)
@@ -234,7 +247,7 @@ namespace TSVTools
             }
 
             var options = new string[] { "Horizontal", "Vertical" };
-            int newLineDirectionIndex = EditorGUILayout.Popup("Direction", (int)removalDirection, options);
+            int newLineDirectionIndex = EditorGUILayout.Popup(new GUIContent("Direction", "Select whether the operation affects rows (Vertical) or columns (Horizontal)."), (int)removalDirection, options);
             if (newLineDirectionIndex != (int)removalDirection)
             {
                 Undo.RecordObject(this, "Change Line Direction");
@@ -245,7 +258,7 @@ namespace TSVTools
             isValidIndex = targetIndex >= 0 && targetIndex <= maxIndex;
 
             EditorGUI.BeginDisabledGroup(!isValidIndex);
-            if (GUILayout.Button("Remove Row/Column"))
+            if (GUILayout.Button(new GUIContent("Remove Row/Column", "Removes the selected row or column based on the chosen direction and index.")))
             {
                 RemoveSelectedLine();
             }
@@ -289,7 +302,7 @@ namespace TSVTools
         private void RenderCreateTableButton()
         {
             GUILayout.Label("No tables loaded.");
-            if (!GUILayout.Button("Create Table")) return;
+            if (!GUILayout.Button(new GUIContent("Create Table", "Creates a new default table with 2 rows and 2 columns."))) return;
 
             Undo.RecordObject(this, "Create Table");
             tableData = new VerticalTable[2];
@@ -388,7 +401,7 @@ namespace TSVTools
             // Margins for scrollable area: leave space for headers and extra padding.
             Vector2 margin = new(30, isValidIndex ? 190 : 230);
             totalWidth += minColumnWidth; // Include space for row labels.
-            totalHeight += minRowHeight;  // Include space for column headers.
+            totalHeight += minRowHeight; // Include space for column headers.
 
             #endregion
 

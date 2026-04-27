@@ -12,6 +12,8 @@
 #if UNITY_EDITOR
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using LanguageTools.Legacy;
+using LanguageTools.TMP;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
@@ -29,15 +31,21 @@ namespace LanguageTools.Editor
     {
         #region === Constants & File Paths ===
 
-        private const string fileData = "ProjectSettings/LanguageFileData.json"; // file location.
+        /// <summary>
+        /// File path used to store and load Language File Manager persistent data in JSON format.
+        /// </summary>
+        private const string fileData = "ProjectSettings/LanguageFileData.json";
 
         #endregion
 
         #region === Prefab Utilities ===
 
         /// <summary>
-        /// Searches the asset database for a prefab by its name and returns the loaded GameObject.
+        /// Searches the Unity AssetDatabase for a prefab with the specified name and returns the loaded GameObject.
+        /// The search is case-insensitive and ignores file extensions.
         /// </summary>
+        /// <param name="prefabName">Name of the prefab asset to locate.</param>
+        /// <returns>The loaded prefab GameObject if found; otherwise, null.</returns>
         public static GameObject FindPrefabByName(string prefabName)
         {
             // Search for all prefab assets matching the given name.
@@ -47,6 +55,9 @@ namespace LanguageTools.Editor
             {
                 // Convert the GUID to a full asset path.
                 string path = AssetDatabase.GUIDToAssetPath(guid);
+
+                // Ensure the asset is inside the desired folder structure.
+                if (!path.Contains("Language Tool/Prefab")) continue;
 
                 // Check if the prefab name matches (ignoring file extension and case).
                 if (Path.GetFileNameWithoutExtension(path).Equals(prefabName, StringComparison.OrdinalIgnoreCase))
@@ -63,8 +74,13 @@ namespace LanguageTools.Editor
         #region === GUI Styles ===
 
         /// <summary>
-        /// Creates a custom GUI label style with specified font size, optional bold and center alignment.
+        /// Creates a customized GUIStyle based on the default label style,
+        /// allowing control over font size, weight, and alignment.
         /// </summary>
+        /// <param name="fontSize">Font size to apply.</param>
+        /// <param name="bold">If true, uses bold font style.</param>
+        /// <param name="centerAlignment">If true, aligns text to the center; otherwise, left-aligned.</param>
+        /// <returns>A configured GUIStyle instance for label rendering.</returns>
         public static GUIStyle CreateLabelStyle(int fontSize, bool bold = false, bool centerAlignment = false)
         {
             // Create a new GUIStyle based on the default label style.
@@ -102,13 +118,24 @@ namespace LanguageTools.Editor
         #region === TSV Utilities ===
 
         /// <summary>
-        /// Checks whether the provided file path is a valid TSV file.
+        /// Validates whether the specified file path is invalid for TSV processing.
+        /// A path is considered invalid if it is null, empty, does not exist, or is not a ".tsv" file.
         /// </summary>
+        /// <param name="filePath">File path to validate.</param>
+        /// <returns>True if the path is invalid; otherwise, false.</returns>
         public static bool IsInvalidTSV(string filePath) => string.IsNullOrEmpty(filePath) || !File.Exists(filePath) || Path.GetExtension(filePath) != ".tsv";
 
         /// <summary>
-        /// Extracts language entries from a vertical TSV table using a given culture code.
+        /// Extracts language ID entries from a vertical TSV table for a specific culture.
+        /// Reads context, ID, and localized text starting from row index 4.
         /// </summary>
+        /// <param name="table">Source TSV table data.</param>
+        /// <param name="languages">List of available languages with column mappings.</param>
+        /// <param name="cultureCode">Culture code used to select the target column.</param>
+        /// <returns>
+        /// A list of ManagerLanguageIdData entries if extraction succeeds;
+        /// otherwise, null when validation fails.
+        /// </returns>
         public static List<ManagerLanguageIdData> ExtractIDsEditor(VerticalTable[] table, List<LanguageAvailable> languages, string cultureCode)
         {
             // Validate if the table is loaded and not empty.
@@ -158,8 +185,13 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Inserts or updates language ID entries into the given vertical table for a specific culture.
+        /// Inserts or updates localized text entries in a vertical TSV table for a specific culture.
+        /// Automatically resizes rows and columns as needed.
         /// </summary>
+        /// <param name="table">Reference to the TSV table to modify.</param>
+        /// <param name="ids">List of language ID data to insert.</param>
+        /// <param name="languages">Available languages with column mappings.</param>
+        /// <param name="cultureCode">Target culture code used to resolve the column index.</param>
         public static void InsertIDsEditor(ref VerticalTable[] table, List<ManagerLanguageIdData> ids, List<LanguageAvailable> languages, string cultureCode)
         {
             // Validate if the table is present.
@@ -210,8 +242,11 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Synchronizes a vertical table with a new list of language ID entries, adding and removing rows as needed.
+        /// Synchronizes the TSV table rows with a given list of IDs,
+        /// adding missing entries and removing obsolete ones while preserving sorted order.
         /// </summary>
+        /// <param name="table">Reference to the TSV table to update.</param>
+        /// <param name="ids">List of valid ID entries to synchronize with.</param>
         public static void SyncTableWithIds(ref VerticalTable[] table, List<ManagerLanguageIdData> ids)
         {
             // Ensure the table is valid and has the necessary header rows.
@@ -267,8 +302,12 @@ namespace LanguageTools.Editor
         #region === Table Builders ===
 
         /// <summary>
-        /// Builds a localized table header from a list of available languages.
+        /// Creates a new TSV table structure with header rows initialized from the provided language list.
+        /// Includes metadata rows and language-specific columns.
         /// </summary>
+        /// <param name="availableLanguages">List of languages used to define table columns.</param>
+        /// <param name="isAvailable">Optional column index to override availability flag.</param>
+        /// <returns>A newly constructed VerticalTable array with initialized headers.</returns>
         public static VerticalTable[] BuildTableFromAvailableLanguages(List<LanguageAvailable> availableLanguages, int isAvailable = -1)
         {
             const int rowCount = 4;
@@ -314,8 +353,12 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Replaces the first 3 rows of a vertical table with another set of top rows.
+        /// Replaces the header section (first four rows) of an existing TSV table
+        /// with a new set of rows while preserving the remaining data.
         /// </summary>
+        /// <param name="original">Original TSV table.</param>
+        /// <param name="newTopRows">New header rows to apply.</param>
+        /// <returns>A new VerticalTable array with updated header rows.</returns>
         public static VerticalTable[] ReplaceTopRows(VerticalTable[] original, VerticalTable[] newTopRows)
         {
             // Validate that the original table has the expected structure.
@@ -332,9 +375,16 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Opens the Language File Manager and adds a language component for editing.
-        /// Ensures the window is fully initialized before injecting the component.
+        /// Opens the Language File Manager window and schedules the addition of a language component for editing.
+        /// The component is injected on the next editor update cycle to ensure the window is fully initialized.
+        /// This method modifies editor state by opening a window and registering a delayed callback.
         /// </summary>
+        /// <param name="iD">Unique identifier of the language entry.</param>
+        /// <param name="type">Component type identifier used to determine how the entry is handled.</param>
+        /// <param name="text">Localized text content associated with the component.</param>
+        /// <param name="alignment">Text alignment configuration.</param>
+        /// <param name="size">Font size to be applied.</param>
+        /// <param name="fontIndex">Index of the font in the configured font list.</param>
         public static void OpenEditorWindowWithComponent(int iD, int type, string text, int alignment, int size, int fontIndex)
         {
             // Prepare the data to be added.
@@ -404,8 +454,10 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Creates the default database structure used to store and map available languages and cultures.
+        /// Creates a default language database structure with placeholder values,
+        /// used as an initial template for language and culture mapping.
         /// </summary>
+        /// <returns>A VerticalTable array representing the default language database.</returns>
         public static VerticalTable[] CreateLanguageDataBase()
         {
             // Initialize the vertical table array with default values.
@@ -462,10 +514,11 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Identifies duplicate IDs from an array of integer IDs.
+        /// Identifies and returns duplicate values from a collection of IDs.
+        /// Each duplicate is included only once in the result.
         /// </summary>
         /// <param name="iDs">Array of IDs to analyze.</param>
-        /// <returns>List of duplicate IDs.</returns>
+        /// <returns>List of duplicated IDs.</returns>
         public static List<int> FindDuplicateIDs(int[] iDs)
         {
             var unique = new HashSet<int>();
@@ -481,9 +534,9 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Loads all language IDs stored in the JSON configuration file.
+        /// Loads all stored language IDs from the JSON configuration file.
         /// </summary>
-        /// <returns>List of loaded language IDs.</returns>
+        /// <returns>A list of IDs if data exists; otherwise, an empty list.</returns>
         public static List<float> LoadLanguageIDs()
         {
             List<float> iDs = new();
@@ -515,17 +568,21 @@ namespace LanguageTools.Editor
         public static Texture2D FindTextureByName(string fileName)
         {
             // Search for all Texture2D assets with the given name.
-            string[] guids = AssetDatabase.FindAssets($"{fileName} t:Texture2D");
+            var guids = AssetDatabase.FindAssets($"{fileName} t:Texture2D");
 
             foreach (string guid in guids)
             {
-                string texturePath = AssetDatabase.GUIDToAssetPath(guid);
-                string nameWithoutExtension = Path.GetFileNameWithoutExtension(texturePath);
+                string path = AssetDatabase.GUIDToAssetPath(guid);
+
+                // Ensure the asset is inside the desired folder structure.
+                if (!path.Contains("Language Tool/Editor Resources")) continue;
+
+                string nameWithoutExtension = Path.GetFileNameWithoutExtension(path);
 
                 // Compare names case-insensitively to find the match.
                 if (nameWithoutExtension.Equals(fileName, StringComparison.OrdinalIgnoreCase))
                 {
-                    return AssetDatabase.LoadAssetAtPath<Texture2D>(texturePath);
+                    return AssetDatabase.LoadAssetAtPath<Texture2D>(path);
                 }
             }
 
@@ -579,10 +636,10 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Draws a rectangular colored box around a block of content in the Unity Editor.
+        /// Draws a colored background box in the Unity Editor and renders custom GUI content inside it.
         /// </summary>
-        /// <param name="content">Delegate containing the UI content to draw.</param>
-        /// <param name="color">Color used to draw the box background.</param>
+        /// <param name="content">Action responsible for drawing inner GUI elements.</param>
+        /// <param name="color">Background color of the box.</param>
         public static void DrawColoredBox(Action content, Color color)
         {
             // Begin a vertical layout and draw a colored rectangle as background.
@@ -663,9 +720,10 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Draws the appropriate icon for a language component type in the Unity Editor, with tooltip support.
+        /// Displays an icon representing a language component type in the Unity Editor,
+        /// including tooltip information for user guidance.
         /// </summary>
-        /// <param name="componentType">Integer representing the component type.</param>
+        /// <param name="componentType">Identifier of the component type.</param>
         public static void DisplayComponentIcon(int componentType)
         {
             // Choose an icon texture and tooltip based on component type.
@@ -697,11 +755,10 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Searches for objects in the current scene that contain the specified ID.
-        /// If no objects are found, a warning window will be displayed.
-        /// If the ID is found, the matching objects will be selected in the Hierarchy.
+        /// Searches all GameObjects in the active scene for components containing the specified ID.
+        /// If matches are found, selects them in the Hierarchy; otherwise, prompts the user with options.
         /// </summary>
-        /// <param name="id">ID to search for in scene objects.</param>
+        /// <param name="id">ID value to search for.</param>
         public static void SearchByID(int id)
         {
             // List to store GameObjects that contain the specified ID.
@@ -748,10 +805,7 @@ namespace LanguageTools.Editor
                     "Cancel",
                     null);
 
-                if (option == 0)
-                {
-                    LanguageIDScannerWindow.ShowWindowID(id);
-                }
+                if (option == 0) LanguageIDScannerWindow.ShowWindowID(id);
             }
         }
 
@@ -760,8 +814,12 @@ namespace LanguageTools.Editor
         #region === ID Matching Helpers ===
 
         /// <summary>
-        /// Checks if the GameObject has a component of type T with the iD field equal to the one informed.
+        /// Attempts to match a GameObject by checking if it contains a component of type T
+        /// with an integer field named "iD" equal to the specified value.
         /// </summary>
+        /// <param name="obj">GameObject to inspect.</param>
+        /// <param name="id">Target ID value.</param>
+        /// <param name="result">List used to collect matching GameObjects.</param>
         private static void TryMatchComponentID<T>(GameObject obj, int id, List<GameObject> result) where T : MonoBehaviour
         {
             // Try to get the component of type T from the GameObject.
@@ -781,9 +839,13 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Checks if the GameObject has a component of type TComp that contains a list of TItem,
-        /// where TItem has an iD field equal to the one informed.
+        /// Attempts to match a GameObject by inspecting a component that contains a list of items,
+        /// where each item may include an "iD" field matching the specified value.
         /// </summary>
+        /// <param name="obj">GameObject to inspect.</param>
+        /// <param name="id">Target ID value.</param>
+        /// <param name="getList">Delegate used to retrieve the list from the component.</param>
+        /// <param name="result">List used to collect matching GameObjects.</param>
         private static void TryMatchListComponentID<TComp, TItem>(GameObject obj, int id, Func<TComp, List<TItem>> getList, List<GameObject> result) where TComp : MonoBehaviour
         {
             // Try to get the component of type TComp from the GameObject.
@@ -813,12 +875,13 @@ namespace LanguageTools.Editor
         }
 
         /// <summary>
-        /// Finds the nearest valid ID in the specified direction, skipping empty ID ranges.
+        /// Finds the closest valid ID relative to the current value,
+        /// searching forward or backward within the available ID list.
         /// </summary>
-        /// <param name="currentID">The current ID index.</param>
-        /// <param name="isLeft">If true, searches backward for the previous valid ID; otherwise, searches forward.</param>
-        /// <param name="componentSave">The list of components containing the valid IDs.</param>
-        /// <returns>The nearest valid ID index in the chosen direction. If none exists, returns the current ID.</returns>
+        /// <param name="currentID">Current ID value.</param>
+        /// <param name="isLeft">If true, searches for the previous ID; otherwise, the next ID.</param>
+        /// <param name="componentSave">List containing valid ID entries.</param>
+        /// <returns>The nearest valid ID, or the original value if no neighbor exists.</returns>
         public static int FindNearestValidID(int currentID, bool isLeft, List<LanguageForEditingSave> componentSave)
         {
             // Extract all valid IDs from the list.

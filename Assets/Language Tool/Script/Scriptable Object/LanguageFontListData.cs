@@ -17,81 +17,84 @@ using UnityEditor;
 using static LanguageTools.Editor.LanguageEditorUtilities;
 #endif
 
-/// <summary>
-/// Holds a list of legacy Font assets for localization support.
-/// </summary>
-[CreateAssetMenu(fileName = "New Language Font List (Legacy)", menuName = "Language/Language Font List Data (Legacy)", order = 2)]
-public class LanguageFontListData : ScriptableObject
+namespace LanguageTools.Legacy
 {
-    #region === Fields ===
+    /// <summary>
+    /// Holds a list of legacy Font assets for localization support.
+    /// </summary>
+    [CreateAssetMenu(fileName = "New Language Font List (Legacy)", menuName = "Tools/Language Tool/Language Font List Data (Legacy)", order = 2)]
+    public class LanguageFontListData : ScriptableObject
+    {
+        #region === Fields ===
 
-    [Tooltip("List of Unity legacy Font objects used for localization.")]
-    public List<Font> fontList = new(); // Initialized to prevent null errors.
+        [Tooltip("List of Unity legacy Font objects used for localization.")]
+        public List<Font> fontList = new();
 
-    #endregion
-}
+        #endregion
+    }
 
 #if UNITY_EDITOR
 
-#region === Custom Editor ===
+    #region === Custom Editor ===
 
-/// <summary>
-/// Custom inspector that enables drag-and-drop for adding Font assets to the list.
-/// </summary>
-[CanEditMultipleObjects]
-[CustomEditor(typeof(LanguageFontListData))]
-public class LanguageFontListDataInspector : Editor
-{
-    public override void OnInspectorGUI()
+    /// <summary>
+    /// Custom inspector that enables drag-and-drop for adding Font assets to the list.
+    /// </summary>
+    [CanEditMultipleObjects]
+    [CustomEditor(typeof(LanguageFontListData))]
+    public class LanguageFontListDataInspector : UnityEditor.Editor
     {
-        // Sync serialized data with the target object.
-        serializedObject.Update();
-        var script = (LanguageFontListData)target;
-
-        using (new EditorGUI.DisabledScope(targets.Length > 1))
+        public override void OnInspectorGUI()
         {
-            // Create a large area for drag-and-drop input.
-            Rect dropArea = GUILayoutUtility.GetRect(0, 100, GUILayout.ExpandWidth(true));
-            EditorGUI.DrawRect(dropArea, new Color(0.15f, 0.15f, 0.15f, 0.5f));
-            EditorGUI.DropShadowLabel(dropArea, "Drop Font Assets Here", CreateLabelStyle(13, true, true));
+            // Sync serialized data with the target object.
+            serializedObject.Update();
+            var script = (LanguageFontListData)target;
 
-            var evt = Event.current;
-
-            // Handle drag and drop interaction inside the defined area.
-            if ((evt.type == EventType.DragUpdated || evt.type == EventType.DragPerform) && dropArea.Contains(evt.mousePosition))
+            using (new EditorGUI.DisabledScope(targets.Length > 1))
             {
-                DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+                // Create a large area for drag-and-drop input.
+                Rect dropArea = GUILayoutUtility.GetRect(0, 100, GUILayout.ExpandWidth(true));
+                EditorGUI.DrawRect(dropArea, new Color(0.15f, 0.15f, 0.15f, 0.5f));
+                EditorGUI.DropShadowLabel(dropArea, "Drop Font Assets Here", CreateLabelStyle(13, true, true));
 
-                if (evt.type == EventType.DragPerform)
+                var evt = Event.current;
+
+                // Handle drag and drop interaction inside the defined area.
+                if ((evt.type == EventType.DragUpdated || evt.type == EventType.DragPerform) && dropArea.Contains(evt.mousePosition))
                 {
-                    DragAndDrop.AcceptDrag();
-                    Undo.RecordObject(script, "Add Fonts");
+                    DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
 
-                    // Add unique Font objects to the list.
-                    foreach (var obj in DragAndDrop.objectReferences)
+                    if (evt.type == EventType.DragPerform)
                     {
-                        if (obj is Font font && !script.fontList.Contains(font))
+                        DragAndDrop.AcceptDrag();
+                        Undo.RecordObject(script, "Add Fonts");
+
+                        // Add unique Font objects to the list.
+                        foreach (var obj in DragAndDrop.objectReferences)
                         {
-                            script.fontList.Add(font);
+                            if (obj is Font font && !script.fontList.Contains(font))
+                            {
+                                script.fontList.Add(font);
+                            }
                         }
+
+                        EditorUtility.SetDirty(script); // Mark the asset as dirty to save changes.
                     }
 
-                    EditorUtility.SetDirty(script); // Mark the asset as dirty to save changes.
+                    evt.Use(); // Use the current event to avoid default processing.
                 }
-
-                evt.Use(); // Use the current event to avoid default processing.
             }
+
+            // Draw any other serialized properties.
+            GUILayout.Space(10);
+            DrawDefaultInspector();
+
+            // Apply property modifications to serialized object.
+            serializedObject.ApplyModifiedProperties();
         }
-
-        // Draw any other serialized properties.
-        GUILayout.Space(10);
-        DrawDefaultInspector();
-
-        // Apply property modifications to serialized object.
-        serializedObject.ApplyModifiedProperties();
     }
-}
 
-#endregion
+    #endregion
 
 #endif
+}

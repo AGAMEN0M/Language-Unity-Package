@@ -33,7 +33,16 @@ namespace TSVTools
         /// </summary>
         public enum LineDirection
         {
+            /// <summary>
+            /// Represents operations applied to rows (vertical direction).
+            /// Adds or removes entire rows in the table.
+            /// </summary>
             Vertical,
+
+            /// <summary>
+            /// Represents operations applied to columns (horizontal direction).
+            /// Adds or removes columns across all rows.
+            /// </summary>
             Horizontal
         }
 

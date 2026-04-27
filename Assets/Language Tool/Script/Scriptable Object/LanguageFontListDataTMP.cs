@@ -18,81 +18,84 @@ using UnityEditor;
 using static LanguageTools.Editor.LanguageEditorUtilities;
 #endif
 
-/// <summary>
-/// Holds a list of TextMeshPro font assets for localization support.
-/// </summary>
-[CreateAssetMenu(fileName = "New Language Font List (TMP)", menuName = "Language/Language Font List Data (TMP)", order = 3)]
-public class LanguageFontListDataTMP : ScriptableObject
+namespace LanguageTools.TMP
 {
-    #region === Fields ===
+    /// <summary>
+    /// Holds a list of TextMeshPro font assets for localization support.
+    /// </summary>
+    [CreateAssetMenu(fileName = "New Language Font List (TMP)", menuName = "Tools/Language Tool/Language Font List Data (TMP)", order = 1)]
+    public class LanguageFontListDataTMP : ScriptableObject
+    {
+        #region === Fields ===
 
-    [Tooltip("List of TMP_FontAsset objects used for localization.")]
-    public List<TMP_FontAsset> TMPFontList = new(); // Initialized to prevent null errors.
+        [Tooltip("List of TMP_FontAsset objects used for localization.")]
+        public List<TMP_FontAsset> TMPFontList = new();
 
-    #endregion
-}
+        #endregion
+    }
 
 #if UNITY_EDITOR
 
-#region === Custom Editor ===
+    #region === Custom Editor ===
 
-/// <summary>
-/// Custom inspector that enables drag-and-drop for adding TMP_FontAssets to the list.
-/// </summary>
-[CanEditMultipleObjects]
-[CustomEditor(typeof(LanguageFontListDataTMP))]
-public class LanguageFontListDataTMPInspector : Editor
-{
-    public override void OnInspectorGUI()
+    /// <summary>
+    /// Custom inspector that enables drag-and-drop for adding TMP_FontAssets to the list.
+    /// </summary>
+    [CanEditMultipleObjects]
+    [CustomEditor(typeof(LanguageFontListDataTMP))]
+    public class LanguageFontListDataTMPInspector : UnityEditor.Editor
     {
-        // Sync serialized data with the target object.
-        serializedObject.Update();
-        var script = (LanguageFontListDataTMP)target;
-
-        using (new EditorGUI.DisabledScope(targets.Length > 1))
+        public override void OnInspectorGUI()
         {
-            // Create a large area for drag-and-drop input.
-            Rect dropArea = GUILayoutUtility.GetRect(0, 100, GUILayout.ExpandWidth(true));
-            EditorGUI.DrawRect(dropArea, new Color(0.15f, 0.15f, 0.15f, 0.5f));
-            EditorGUI.DropShadowLabel(dropArea, "Drop TMP Font Assets Here", CreateLabelStyle(13, true, true));
+            // Sync serialized data with the target object.
+            serializedObject.Update();
+            var script = (LanguageFontListDataTMP)target;
 
-            var evt = Event.current;
-
-            // Handle drag and drop interaction inside the defined area.
-            if ((evt.type == EventType.DragUpdated || evt.type == EventType.DragPerform) && dropArea.Contains(evt.mousePosition))
+            using (new EditorGUI.DisabledScope(targets.Length > 1))
             {
-                DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+                // Create a large area for drag-and-drop input.
+                Rect dropArea = GUILayoutUtility.GetRect(0, 100, GUILayout.ExpandWidth(true));
+                EditorGUI.DrawRect(dropArea, new Color(0.15f, 0.15f, 0.15f, 0.5f));
+                EditorGUI.DropShadowLabel(dropArea, "Drop TMP Font Assets Here", CreateLabelStyle(13, true, true));
 
-                if (evt.type == EventType.DragPerform)
+                var evt = Event.current;
+
+                // Handle drag and drop interaction inside the defined area.
+                if ((evt.type == EventType.DragUpdated || evt.type == EventType.DragPerform) && dropArea.Contains(evt.mousePosition))
                 {
-                    DragAndDrop.AcceptDrag();
-                    Undo.RecordObject(script, "Add TMP Fonts");
+                    DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
 
-                    // Add unique TMP_FontAsset objects to the list.
-                    foreach (var obj in DragAndDrop.objectReferences)
+                    if (evt.type == EventType.DragPerform)
                     {
-                        if (obj is TMP_FontAsset font && !script.TMPFontList.Contains(font))
+                        DragAndDrop.AcceptDrag();
+                        Undo.RecordObject(script, "Add TMP Fonts");
+
+                        // Add unique TMP_FontAsset objects to the list.
+                        foreach (var obj in DragAndDrop.objectReferences)
                         {
-                            script.TMPFontList.Add(font);
+                            if (obj is TMP_FontAsset font && !script.TMPFontList.Contains(font))
+                            {
+                                script.TMPFontList.Add(font);
+                            }
                         }
+
+                        EditorUtility.SetDirty(script); // Mark the asset as dirty to save changes.
                     }
 
-                    EditorUtility.SetDirty(script); // Mark the asset as dirty to save changes.
+                    evt.Use(); // Use the current event to avoid default processing.
                 }
-
-                evt.Use(); // Use the current event to avoid default processing.
             }
+
+            // Draw any other serialized properties.
+            GUILayout.Space(10);
+            DrawDefaultInspector();
+
+            // Apply property modifications to serialized object.
+            serializedObject.ApplyModifiedProperties();
         }
-
-        // Draw any other serialized properties.
-        GUILayout.Space(10);
-        DrawDefaultInspector();
-
-        // Apply property modifications to serialized object.
-        serializedObject.ApplyModifiedProperties();
     }
-}
 
-#endregion
+    #endregion
 
 #endif
+}
