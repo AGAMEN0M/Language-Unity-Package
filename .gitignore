@@ -74,3 +74,4 @@ crashlytics-build.properties
 # Ignore folders
 /Assets/Editor
 Assets/Language Tool/Fonts/DengXian/Deng SDF.asset
+/Packages/com.unity.asset-store-tools
