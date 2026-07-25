@@ -29,9 +29,9 @@ This repository combines **three integrated systems** that work together:
 
 [Unity Asset Store]()
 
-[Package v0.2.7](https://drive.google.com/file/d/1VxZQeY31bD0NP-7E8dQ8GXFhDvMk69Ik/view?usp=drive_link)
+[Package v0.2.7](https://github.com/AGAMEN0M/Language-Tool-Unity/releases/download/v0.2.7/Language.Tool.-.by.Lucas_AGAMENOM.unitypackage)
  / 
-[Documentation](https://drive.google.com/file/d/1uLV0fuCw24jL5S4CJnP0qf0RH-uDT5gc/view?usp=drive_link)
+[Documentation](https://github.com/user-attachments/files/30370154/Language.Documentation.pdf)
 
 ---
 
@@ -39,9 +39,9 @@ This repository combines **three integrated systems** that work together:
 
 [Unity Asset Store]()
 
-[Package v0.0.4](https://drive.google.com/file/d/1R3v4CvMO-zjEDR5fv1U82XfelESRzija/view?usp=drive_link)
+[Package v0.0.4](https://github.com/AGAMEN0M/Language-Tool-Unity/releases/download/v0.2.7/TSV.Tools.-.by.Lucas_AGAMENOM.unitypackage)
  / 
-[Documentation](https://drive.google.com/file/d/1OJrUIuEUsq-RjKOVW8n6ywu1xMV4VKlI/view?usp=drive_link)
+[Documentation](https://github.com/user-attachments/files/30370157/TSVTools.Documentation.pdf)
 
 ---
 
@@ -49,9 +49,9 @@ This repository combines **three integrated systems** that work together:
 
 [Unity Asset Store]()
 
-[Package v0.1.2](https://drive.google.com/file/d/18i30uYm1-uttcRiIr01xk7Kt2nesx59O/view?usp=drive_link)
+[Package v0.1.2](https://github.com/AGAMEN0M/Language-Tool-Unity/releases/download/v0.2.7/Emoji.System.Base.-.by.Lucas_AGAMENOM.unitypackage)
  / 
-[Documentation](https://drive.google.com/file/d/1QcYsbw7xPEpYgQBIINSjS-Ar1xz5z4dh/view?usp=drive_link)
+[Documentation](https://github.com/user-attachments/files/30370153/Emoji.Documentation.pdf)
 
 ---
 
@@ -98,7 +98,7 @@ The three systems are designed to **work together**, not separately:
 
 # 📁 Old Versions
 
-[Old Versions - Package](https://drive.google.com/drive/folders/1btxBK7_OI_U6zOee_tYZ26kVlsOkkKCR?usp=sharing)
+[Old Versions - Package](https://github.com/AGAMEN0M/Language-Tool-Unity/releases)
 
 ---
 
