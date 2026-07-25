@@ -27,7 +27,6 @@ This repository combines **three integrated systems** that work together:
 
 ### 🔤 Language Tool
 
-[Package v0.2.7](https://drive.google.com/file/d/1OPTWE8oypBKnhCXjnx_mEk_1XlXoIamd/view?usp=drive_link)
 [Package v0.2.7](https://drive.google.com/file/d/1VxZQeY31bD0NP-7E8dQ8GXFhDvMk69Ik/view?usp=drive_link)
  / 
 [Documentation](https://drive.google.com/file/d/1uLV0fuCw24jL5S4CJnP0qf0RH-uDT5gc/view?usp=drive_link)
@@ -36,6 +35,8 @@ This repository combines **three integrated systems** that work together:
 
 ### 📑 TSV Tools
 
+[Unity Asset Store]()
+
 [Package v0.0.4](https://drive.google.com/file/d/1R3v4CvMO-zjEDR5fv1U82XfelESRzija/view?usp=drive_link)
  / 
 [Documentation](https://drive.google.com/file/d/1OJrUIuEUsq-RjKOVW8n6ywu1xMV4VKlI/view?usp=drive_link)
@@ -43,6 +44,8 @@ This repository combines **three integrated systems** that work together:
 ---
 
 ### 😀 Emoji System Base
+
+[Unity Asset Store]()
 
 [Package v0.1.2](https://drive.google.com/file/d/18i30uYm1-uttcRiIr01xk7Kt2nesx59O/view?usp=drive_link)
  / 
