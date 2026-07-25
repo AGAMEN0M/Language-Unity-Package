@@ -35,14 +35,14 @@ namespace LanguageTools
         [SerializeField, Tooltip("Output file extension.")]
         private string fileExtension = ".txt";
 
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
         [SerializeField, Tooltip("Folder path in Unity Editor.")]
         private string folderInUnity = "Editor";
-#endif
-#pragma warning disable CS0414
+    #endif
+    #pragma warning disable CS0414
         [SerializeField, Tooltip("Folder path in builds.")]
         private string folderInBuild = "StreamingAssets";
-#pragma warning restore CS0414
+    #pragma warning restore CS0414
 
         [Space(5)]
 
@@ -81,6 +81,7 @@ namespace LanguageTools
             set => fileExtension = value;
         }
 
+    #if UNITY_EDITOR
         /// <summary>
         /// Gets or sets the folder path used in the Unity Editor.
         /// </summary>
@@ -89,6 +90,7 @@ namespace LanguageTools
             get => folderInUnity;
             set => folderInUnity = value;
         }
+    #endif
 
         /// <summary>
         /// Gets or sets the folder path used in builds.

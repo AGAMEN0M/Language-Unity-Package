@@ -140,5 +140,5 @@ namespace LanguageTools
 
         #endregion
     }
-}
 #endif
+}

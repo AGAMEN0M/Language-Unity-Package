@@ -28,6 +28,7 @@ This repository combines **three integrated systems** that work together:
 ### 🔤 Language Tool
 
 [Package v0.2.7](https://drive.google.com/file/d/1OPTWE8oypBKnhCXjnx_mEk_1XlXoIamd/view?usp=drive_link)
+[Package v0.2.7](https://drive.google.com/file/d/1VxZQeY31bD0NP-7E8dQ8GXFhDvMk69Ik/view?usp=drive_link)
  / 
 [Documentation](https://drive.google.com/file/d/1uLV0fuCw24jL5S4CJnP0qf0RH-uDT5gc/view?usp=drive_link)
 
